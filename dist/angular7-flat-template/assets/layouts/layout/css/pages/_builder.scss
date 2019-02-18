@@ -1,0 +1,339 @@
+.app-quick-sidebar{
+  &.fixed{
+    box-shadow: none;
+    .builder-group{
+      ul{
+        li{
+          a{
+            i{
+              &.svg{
+                width: 15px;
+                height: 15px;
+                margin-right: 8px;
+                display: inline-block;
+                background: url(../img/svg/builder.svg) no-repeat;
+                &.singleline-icon{
+                  background-position: -7px -6px;
+                }  
+
+                &.multiline-icon{
+                  background-position: -30px -6px;
+                }
+
+                &.dropdown-icon{
+                  background-position: -53px -4px;
+                }
+
+                &.multiselect-icon{
+                  background-position: -78px -5px;
+                }
+
+                &.number-icon{
+                  background-position: -6px -20px;
+                }
+
+                &.checkbox-icon{
+                  background-position: -29px -18px;
+                }
+
+                &.radio-icon{
+                  background-position: -54px -18px;
+                }
+
+                &.currency-icon{
+                  background-position: -79px -19px;
+                }
+
+                &.decimal-icon{
+                  background-position: -6px -35px;
+                }
+
+                &.percent-icon{
+                  background-position: -31px -36px;
+                }
+
+                &.url-icon{
+                  background-position: -53px -35px;
+                }
+
+                &.hidden-icon{
+                  background-position: -78px -35px;
+                }
+
+                &.html-icon{
+                  background-position: -6px -52px;
+                }
+                &.upload-icon{
+                  background-position: -30px -51px;
+                }
+
+                &.signature-icon{
+                  background-position: -50px -51px;
+                }
+
+                &.name-icon{
+                  background-position: -79px -51px;
+                }
+
+                &.date-icon{
+                  background-position: -5px -68px;
+                }
+
+                &.time-icon{
+                  background-position: -29px -67px;
+                }
+
+                &.phone-icon{
+                  background-position: -55px -68px;
+                }
+
+                &.rating-icon{
+                  background-position: -79px -68px;
+                }
+
+                &.datetime-icon{
+                  background-position: -5px -83px;
+                }
+
+                &.address-icon{
+                  background-position: -30px -85px;
+                }
+
+                &.website-icon{
+                  background-position: -52px -84px;
+                }
+
+                &.usewrname-icon{
+                  background-position: -79px -51px;
+                }
+
+                &.password-icon{
+                  background-position: -80px -84px;
+                }
+
+                &.email-icon{
+                  background-position: -5px -98px;
+                }
+
+                &.fileupload-icon{
+                  background-position: -29px -100px;
+                }
+
+                &.captcha-icon{
+                  background-position: -51px -99px;
+                }
+
+                &.list-icon{
+                  background-position: -79px -100px;
+                }
+
+                &.multicheckbox-icon{
+                  background-position: -54px -114px;
+                }
+
+                &.title-icon{
+                  background-position: -5px -113px;
+                }
+
+                &.body-icon{
+                  background-position: -30px -114px;
+                }
+
+                &.excerpt-icon{
+                  background-position: -52px -114px;
+                }
+
+                &.tags-icon{
+                  background-position: -79px -114px;
+                }
+
+                &.catogory-icon{
+                  background-position: -5px -129px;
+                }
+
+                &.postimage-icon{
+                  background-position: -5px -129px;
+                }
+
+                &.customfield-icon{
+                  background-position: -51px -129px;
+                }
+
+                &.product-icon{
+                  background-position: -5px -146px;
+                }
+
+                &.quantity-icon{
+                  background-position: -30px -145px;
+                }
+
+                &.option-icon{
+                  background-position: -51px -144px;
+                }
+
+                &.shipping-icon{
+                  background-position: -81px -144px;
+                }
+
+                &.total-icon{
+                  background-position: -5px -162px;
+                }
+
+                &.card-icon{
+                  background-position: -30px -162px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.builder-group {
+  // builder sidebar
+  margin-bottom: 6px;
+  overflow: hidden;
+  background: $builder-bkg;
+  h3 {
+    color: inherit;
+    font-size: $font-size-small;
+    cursor: pointer;
+    padding: 12px 16px;
+    position: relative;
+    background: #e9e9e9;
+    text-align: left;
+  }
+  h3.toggle {
+    &:before {
+      width: 13px;
+      height: 1px;
+      right: 10px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      content: "";
+      position: absolute;
+      background: #7b8285;
+    }
+    &:after {
+      height: 13px;
+      width: 1px;
+      right: 16px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      content: "";
+      position: absolute;
+      background: #7b8285;
+    }
+  }
+  ul.nav {
+    display: none;
+    li {
+      float: left;
+      width: 50%;
+      a {
+        height: 40px;
+        color: $regular-font-color;
+        font-size: $font-size-sm-2;
+        font-weight: 500;
+        padding: 0 16px;
+        border: 1px solid #f1f1f1;
+        border-right: 0;
+        border-bottom: 0;
+        @include flexbox;
+        @include align-items(center);
+        &:hover {
+          background: $regular-bkg;
+        }
+      }
+    }
+  }
+}
+.builder-group.open {
+  h3.toggle {
+    &:after {
+      opacity: 0;
+    }
+  }
+}
+.draggable-builder {
+  margin-right: 10px;
+  // builder form cnt
+  &.form-body {
+    @include flex-grow;
+    max-height: calc(100vh - 104px);
+    .applet-head {
+      z-index: inherit;
+    }
+  }
+  .in:not(.tooltip) {
+    padding: 8px 0;
+    position: relative;
+    border: 1px solid $regular-border-color;
+    &:hover {
+      background: $builder-bkg;
+      border-color: $secondary-border-color;
+      span.handle {
+        opacity: 1;
+      }
+    }
+    span.handle {
+      top: 0;
+      bottom: 0;
+      left: 10px;
+      color: $handle-font-color;
+      opacity: 0;
+      margin: auto;
+      z-index: 3;
+      cursor: pointer;
+      font-size: 16px;
+      position: absolute;
+      @include flexbox;
+      @include align-items(center);
+      @include justify-content(center);
+    }
+    .app-data {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      position: absolute;
+    }
+    .form-group {
+      margin-bottom: 0;
+      .control-label {
+        padding-left: 46px;
+      }
+    }
+    .sol-current-selection {
+      display: none;
+    }
+    .beta-2 {
+      .app-radio {
+        margin-bottom: 6px;
+      }
+      .app-checkbox {
+        margin-bottom: 6px;
+      }
+    }
+  }
+  .in:not(.tooltip).active {
+    background: $builder-bkg;
+    border-color: $secondary-border-color;
+    span.handle {
+      opacity: 1;
+    }
+  }
+  .input-icon.right {
+    > i {
+      right: 6px;
+    }
+  }
+  .xc-body {
+    padding-bottom: 30px;
+  }
+}

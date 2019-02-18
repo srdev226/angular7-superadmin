@@ -1,0 +1,49 @@
+@import "../../components/variables";                     // global field star framework variables
+@import "../../components/flexbox";                       // global field star framework flexbox mixins
+.app-dashboard{
+  .ds-portlet{
+    padding: 14px;
+  }
+  .items{
+    .item{
+      width: 190px;
+      height: 180px;
+      margin-right: 18px;      
+      display: inline-block;
+      a{
+        width: 100%;
+        height: 100%;
+        color: #212121;
+        @include flexbox;
+        transition: 0.5s;
+        @include align-items(center);
+        @include justify-content(center);
+        @include flex-direction(column);
+        background: #fff;
+        border-radius: 4px;
+        border: 1px solid #e3e3e3;
+        &:hover{
+          box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
+        }
+        i{
+          width: 54px;
+          height: 54px;
+          background: #ecf1f6;
+          border-radius: 100px;
+          margin-bottom: 12px;
+        }
+        h3{
+          font-size: 24px;
+          margin-bottom: 10px;
+          font-family: $font-stack-semibold;
+        }
+        h4{
+          opacity: 0.8;
+          font-size: 18px;
+          font-family: $font-stack;
+        }
+      }
+    }
+  }
+}
+

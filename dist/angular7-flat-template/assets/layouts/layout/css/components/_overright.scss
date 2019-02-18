@@ -1,0 +1,12 @@
+.bootstrap-select.btn-group{
+  .dropdown-toggle{
+    &:after{
+      top: 1px;
+      left: 2px;
+      position: relative;
+    }
+    .filter-option{
+      display: initial;
+    }
+ }  
+}

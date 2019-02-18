@@ -1,0 +1,80 @@
+<div class="app-content">                      
+  <!-- begin app head-->
+  <div class="app-head">
+    <h1>Customers</h1>
+    <div class="action hide">
+      <div class="btn-group">
+        <a class="btn default btn-sm" href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false"> Actions <i class="svg down-icon"></i></a>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li><a href=""><i class="svg export-icon"></i> Export All Data </a></li>
+          <li><a href="javascript:void(0);" data-toggle="modal" data-target="#merge-data-modal"><i class="svg merge-icon"></i> Merge Data</a></li>
+          <li><a href="javascript:void(0);" data-toggle="modal" data-target="#delete-modal"><i class="svg delete-icon"></i> Delete Data</a></li>
+        </ul>
+      </div>
+      <div class="btn-group app-btn tip">
+        <a href="javascript:void(0);" class="app-data" app-data="data-null" data-toggle="tooltip" data-placement="bottom" data-original-title="Help Tips"><i class="svg solid tips-icon"></i></a>
+      </div>    
+      <div class="btn-group app-btn">
+        <a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false"><i class="svg solid cog-icon" data-toggle="tooltip" data-placement="bottom" data-original-title="Column Settings"></i></a>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li><a href="javascript:void(0);" class="app-data" app-data="data-cc"><i class="svg columns-icon"></i> Customize Columns</a></li>
+        </ul>
+      </div>                                
+      <div class="btn-group app-btn">
+        <a href="javascript:void(0);" class="data-filter app-data" app-data="data-filter"><i class="svg solid filter-icon" data-toggle="tooltip" data-placement="bottom" data-original-title="Data Filter"></i></a>
+      </div>
+      <div class="btn-group app-btn">
+        <div class="search-engine line">         
+          <div class="input-group">              
+            <input type="text" class="form-control input-sm" placeholder="Search...">
+            <span class="input-group-btn">
+            <a href="javascript:void(0);" class="btn btn-search"><i class="svg solid search-icon"></i></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>                
+  </div>
+  <!-- end app head-->                          
+  <!-- begin portlet body-->
+  <div class="portlet-body">
+    <div class="table-container dragscroll">                  
+      <table class="table data-table action-table table-hover">
+        <thead>
+          <tr role="row" class="heading">                            
+            <th>Customer ID</th>
+            <th>Company Name</th>
+            <th>Customer Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Domain</th>
+            <th>Industry</th>
+            <th>Currency</th>
+            <th>Timezone</th>
+            <th>Location</th>
+            <th>Joining Date</th>
+            <th>Portal Access</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let customer of allCustomers" class="pointer" (click)="onSelectCustomer(customer.id)">                            
+            <td><a>{{customer.id}}</a></td>
+            <td><a>{{customer.name}}</a></td>
+            <td><a>{{customer.user.name}}</a></td>
+            <td><a>{{customer.email}}</a></td>
+            <td><a>{{customer.phone}}</a></td>
+            <td><a>{{customer.url}}</a></td>
+            <td><a>{{customer.industry.name}}</a></td>
+            <td><a>{{customer.currency.name}}</a></td>
+            <td><a>{{customer.timezone? customer.timezone.name : ''}}</a></td>
+            <td><a>{{customer.address.state ? customer.address.state.name : ''}}</a></td>
+            <td><a>{{customer.createdAt | date: 'dd/MM/yyyy'}}</a></td>
+            <td><a>{{customer.portal_access === 'Active' ? 'Enabled' : 'Disabled'}}</a></td>
+          </tr>           
+        </tbody>
+      </table>
+    </div>          
+  </div>
+  <!-- end portlet body--> 
+</div>
+<!-- end content -->                

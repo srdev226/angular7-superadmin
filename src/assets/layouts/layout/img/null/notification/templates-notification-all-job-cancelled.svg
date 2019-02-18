@@ -1,0 +1,66 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="181" height="122" viewBox="0 0 181 122">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eef3fe;
+      }
+
+      .cls-1, .cls-10, .cls-2, .cls-5, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #5387ff;
+      }
+
+      .cls-3, .cls-4, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-4, .cls-6 {
+        stroke: #e3e3e3;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+      }
+
+      .cls-5, .cls-7, .cls-9 {
+        fill: #858bec;
+      }
+
+      .cls-7 {
+        opacity: 0.4;
+      }
+
+      .cls-8 {
+        fill: #ffd64d;
+      }
+
+      .cls-10 {
+        fill: #d75a4a;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M19,68.019c0.518-12.348,3.106-22.638,28.987-30.87S81.739,25.287,94.68,17.569c10.426-6.394,42.473-5.832,57.974,15.435,10.784,14.8,10.007,34.037-2.07,47.334-10.26,11.3-31.5,20.432-52.8,24.7-21.692,4.344-37.893,1.057-53.939-5.117S18.655,82.768,19,68.019Z"/>
+  <g id="job">
+    <path id="Forma_1" data-name="Forma 1" class="cls-2" d="M92,74c0,1.095-.255,2-2,2H77c-1.867,0-2-1.049-2-2V67H46V87a6.679,6.679,0,0,0,2.258,4.677C49.559,92.985,51.174,93,53,93h62a5.9,5.9,0,0,0,6-6V67H92v7h0ZM77,67H90v7H77V67Z"/>
+    <path id="Forma_1_copy_8" data-name="Forma 1 copy 8" class="cls-2" d="M52,41c-5.784,0-6,4.044-6,8V65h75V49c0-4.341-1.43-8-7-8H52Z"/>
+    <path id="Forma_1_copy_7" data-name="Forma 1 copy 7" class="cls-2" d="M70,32H96c2.628,0,3,.366,3,2v7H68V35C68,33.5,68.289,32,70,32Z"/>
+    <rect class="cls-3" x="72" y="37" width="23" height="4"/>
+  </g>
+  <g id="Calener">
+    <rect id="Rounded_Rectangle_602" data-name="Rounded Rectangle 602" class="cls-4" x="108" y="60" width="42" height="38" rx="6" ry="6"/>
+    <path class="cls-5" d="M107,68.031S105.522,59,113,59h32s6,0.306,6,6v3.031H107Z"/>
+    <path id="Rounded_Rectangle_600" data-name="Rounded Rectangle 600" class="cls-6" d="M116.854,58.993c1.21,0,1.375,1.268,1.341,1.928v2.7c0.036,0.66.05,1.8-1.35,1.8a1.459,1.459,0,0,1-1.35-1.8v-2.7C115.47,60.26,115.669,58.989,116.854,58.993Zm11.688,0.078a1.393,1.393,0,0,1,1.353,1.851v2.7c-0.033.661-.22,1.84-1.314,1.84a1.436,1.436,0,0,1-1.386-1.84v-2.7C127.229,60.261,127.169,59.071,128.542,59.071Zm11.741,0.022c1.4,0,1.346,1.168,1.312,1.829v2.7c-0.033.661,0.088,1.836-1.294,1.836-1.516,0-1.406-1.17-1.406-1.836v-2.7C138.86,60.256,138.824,59.093,140.283,59.093Z"/>
+    <rect id="Rounded_Rectangle_601" data-name="Rounded Rectangle 601" class="cls-7" x="113" y="74" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy" data-name="Rounded Rectangle 601 copy" class="cls-7" x="122" y="74" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_2" data-name="Rounded Rectangle 601 copy 2" class="cls-8" x="132" y="74" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_4" data-name="Rounded Rectangle 601 copy 4" class="cls-7" x="113" y="82" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_4-2" data-name="Rounded Rectangle 601 copy 4" class="cls-7" x="132" y="82" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_4-3" data-name="Rounded Rectangle 601 copy 4" class="cls-7" x="141" y="82" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_6" data-name="Rounded Rectangle 601 copy 6" class="cls-7" x="141" y="74" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_5" data-name="Rounded Rectangle 601 copy 5" class="cls-7" x="113" y="90" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_5-2" data-name="Rounded Rectangle 601 copy 5" class="cls-9" x="122" y="90" width="4" height="4" rx="1" ry="1"/>
+  </g>
+  <path id="Forma_1-2" data-name="Forma 1" class="cls-10" d="M136.838,93.829a0.534,0.534,0,0,1-.64,0l-1.683-1.349-1.762,1.413a0.536,0.536,0,0,1-.641,0,0.315,0.315,0,0,1,0-.514l1.762-1.413-1.682-1.349a0.315,0.315,0,0,1,0-.514,0.536,0.536,0,0,1,.641,0l1.682,1.349,1.6-1.285a0.536,0.536,0,0,1,.641,0,0.315,0.315,0,0,1,0,.514l-1.6,1.285,1.682,1.349A0.315,0.315,0,0,1,136.838,93.829Z"/>
+  <path id="Forma_1_copy_9" data-name="Forma 1 copy 9" class="cls-10" d="M125.838,85.829a0.534,0.534,0,0,1-.64,0l-1.683-1.349-1.762,1.413a0.536,0.536,0,0,1-.641,0,0.315,0.315,0,0,1,0-.514l1.762-1.413-1.682-1.349a0.315,0.315,0,0,1,0-.514,0.536,0.536,0,0,1,.641,0l1.682,1.349,1.6-1.285a0.536,0.536,0,0,1,.641,0,0.315,0.315,0,0,1,0,.514l-1.6,1.285,1.682,1.349A0.315,0.315,0,0,1,125.838,85.829Z"/>
+</svg>

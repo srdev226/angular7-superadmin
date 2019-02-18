@@ -1,0 +1,109 @@
+<div class="app-content">                      
+  <!-- begin app head-->
+  <div class="app-head">
+    <h1>
+      <a class="pointer" [routerLink]="['/customer/all-customers']" routerLinkActive="router-link-active" >Customers</a> 
+      <span class="arrow"></span> 
+      <small *ngIf="!isEditing">Customer Details</small>
+      <small *ngIf="isEditing">Edit Customer</small>
+    </h1> 
+    <div class="action">                 
+      <div class="btn-group">
+        <a class="btn default btn-sm" href="javascript:void(0);" data-toggle="dropdown" aria-expanded="true" (click)="toggleAction($event)"> Actions <i class="svg down-icon"></i></a>
+        <ul #elRef class="dropdown-menu dropdown-menu-right" [ngStyle]="{'display': actionOpened ? 'block' : 'none'}">
+          <li><a class="pointer" (click)="onClickEdit();actionOpened=false"><i class="svg edit-icon"></i> Edit </a></li>    
+        </ul>
+      </div> 
+      <div class="quick-toggler app-bars"><i class="fa-line"></i></div>  
+    </div>              
+  </div>
+  <!-- end app head-->                          
+  <!-- begin portlet body-->
+  <div class="portlet-body">
+    <app-edit-profile 
+      *ngIf="isEditingProfile"
+      (OnCancel)="onClose($event)" 
+      (OnUpdate)="onUpdate($event)"
+      [tenant]="tenant"
+      [profile]="profile"
+    ></app-edit-profile>
+    <div class="profile-container" *ngIf="!isEditingProfile">
+      <div class="profile-sidebar">
+        <div class="top in">    
+          <figure><img *ngIf="!isLoading" src="{{customerDetails.organization_details ? customerDetails.organization_details.user.image : ''}}" alt=""/></figure>   
+          <div class="cnt"> 
+            <h3 *ngIf="!isLoading">
+              {{customerDetails.organization_details ? customerDetails.organization_details.user.name : ''}}
+            </h3>                      
+            <p *ngIf="!isLoading">
+              {{customerDetails.organization_details ? customerDetails.organization_details.name : ''}}
+            </p>
+          </div>                    
+        </div>
+        <div class="middle in">
+          <h3>Contact Information</h3>
+          <ul class="list-unstyled"> 
+            <li *ngIf="!isLoading">
+              <i class="svg phone-icon"></i> 
+              {{customerDetails.organization_details ? customerDetails.organization_details.phone : ''}}
+            </li>
+            <li *ngIf="!isLoading">
+              <i class="svg email-icon"></i> 
+              <a href="{{customerDetails.organization_details ? customerDetails.organization_details.email : ''}}">
+                {{customerDetails.organization_details ? customerDetails.organization_details.email : ''}}
+              </a>
+            </li>
+            <li *ngIf="!isLoading">
+              <i class="svg globe-icon"></i> 
+              <a href="{{customerDetails.organization_details ? customerDetails.organization_details.url : ''}}" target="_blank">
+                {{customerDetails.organization_details ? customerDetails.organization_details.url : ''}}
+              </a>
+            </li>
+          </ul>  
+        </div>
+        <div class="bottom"> 
+          <div class="tab-container">
+            <ul class="nav">
+              <li 
+                *ngFor="let tab of tabs"
+                class="pointer"
+                (click)="onClickTabTitle(tab)"
+              >
+                <a [ngClass]="{'active': currentTab === tab}">{{tab}}</a>
+              </li>
+            </ul>  
+          </div>
+        </div>
+      </div> 
+      <div class="profile-content">
+        <div class="flex-scroll">
+          <div class="tab-content">    
+            <div *ngIf="!isLoading" class="tab-pane active">
+              <app-profile 
+                *ngIf="currentTab === 'Profile'"
+                [tenant]="tenant"
+                [profile]="profile"
+                [customerDetails]="customerDetails"
+              ></app-profile>
+              <app-change-password 
+                *ngIf="currentTab === 'Change Password'"
+                [tenant]="tenant"
+                (OnCancel)="onClose()"
+                (OnUpdate)="onUpdate($event)"
+              ></app-change-password>     
+              <app-permissions 
+                *ngIf="currentTab === 'Permissions'"
+                [customerDetails]="customerDetails" 
+                [tenant]="tenant" 
+                [isEditing]="isEditing"
+                (OnChangeAllowAccess)="onChangeAllowAccess($event)">
+              </app-permissions>  
+            </div>                           
+          </div>
+        </div>
+      </div> 
+    </div>                                   
+  </div>
+  <!-- end portlet body--> 
+</div>
+<!-- end content -->                

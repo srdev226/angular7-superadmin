@@ -1,0 +1,731 @@
+i{
+  &.svg{    
+    position: relative;
+    display: inline-block;
+    background: url(../img/svg/sprites.svg) no-repeat;
+    &.solid{  
+      &.edit-icon{
+        width: 16px;
+        height: 16px;
+        background-position: -24px 0px;
+      }
+      &.card-icon{
+        width: 16px;
+        height: 16px;
+        background-position: -25px -1px;
+      }
+      &.pdf-icon{
+        width: 13px;
+        height: 16px;
+        background-position: -25px -57px;
+      }
+      &.send-icon{
+        width: 18px;
+        height: 16px;
+        background-position:-23px -76px;
+      }
+      &.tips-icon{
+        width: 13px;
+        height: 17px;
+        background-position: -26px -95px;
+      }
+      &.filter-icon{
+        width: 14px;
+        height: 16px;
+        background-position: -25px -243px;
+      }
+      &.search-icon{
+        width: 16px;
+        height: 16px;
+        background-position: -24px -261px;
+      }
+      &.pin-icon{
+        width: 12px;
+        height: 16px;
+        background-position: -26px -280px;
+      }
+      &.refresh-icon{
+        width: 18px;
+        height: 18px;
+        background-position: -23px -222px;
+      }
+      &.format-icon{
+        width: 16px;
+        height: 14px;
+        background-position: -23px -153px;
+      }
+      &.cog-icon{
+        width: 16px;
+        height: 16px;
+        &:not(.sm){
+          background-position: -24px -115px;
+        }
+        &.sm{
+          background-position: -23px -306px;
+        }
+      }
+    }
+    &:not(.solid) {
+      &.ios-icon{
+        width: 20px;
+        height: 24px;
+        background-position: -103px -1px;
+      }
+      &.android-icon{
+        width: 19px;
+        height: 21px;
+        background-position: -104px -28px;
+      }
+      &.web-icon{
+        width: 24px;
+        height: 24px;
+        background-position: -100px -52px;
+      }
+      //first  
+      &.eye-icon{
+        width: 17px;
+        height: 16px;        
+        &:not(.show){  
+          background-position: -2px 2px;
+        }
+        &.show{
+          background-position: -2px -14px;
+        }
+      }
+      &.learn-icon{
+        width: 11px;
+        height: 11px;
+        margin-right: 4px;
+        background-position: -4px -134px;
+      }
+      &.plus-icon{
+        width: 10px;
+        height: 10px;
+        margin-right: 4px;        
+        &:not(.black){  
+          background-position: -5px -108px;  
+        }
+        &.black{
+          background-position: -5px -121px;
+        }
+      }
+      &.down-icon{
+        top: -1px;
+        width: 8px;
+        height: 5px;        
+        background-position: -5px -148px;
+      }
+      &.angle-icon{
+        width: 8px;
+        height: 12px;        
+        &.left{
+          background-position: -6px -198px;
+        }
+        &.right{
+          background-position: -6px -213px;
+        }
+      }
+      &.clock-icon{
+        width: 12px;
+        height: 12px;
+        background-position: -4px -183px;
+        &.white{
+          top: 2px;
+          background-position: -4px -239px;
+        }
+      }
+      //third  
+      &.help-icon{
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+        background-position: -43px 1px;
+      }
+      &.logout-icon{
+        width: 18px;
+        height: 16px;
+        margin-right: 10px;
+        background-position: -42px -18px;
+      } 
+      &.estimates-icon{
+        width: 17px;
+        height: 17px;
+        background-position: -43px -35px;
+      }
+      &.work-icon{
+        width: 14px;
+        height: 18px;
+        background-position: -45px -53px;
+      }
+      &.task-icon{
+        width: 15px;
+        height: 15px;
+        background-position: -44px -72px;
+      }
+      &.event-icon{
+        width: 15px;
+        height: 15px;
+        background-position: -44px -89px;
+      }
+      &.followup-icon{
+        width: 15px;
+        height: 17px;
+        background-position: -44px -106px;
+      }
+      &.invoice-icon{
+        width: 13px;
+        height: 16px;        
+        background-position: -45px -126px;
+      } 
+      &.columns-icon{
+        width: 13px;
+        height: 13px;
+        background-position: -45px -233px;
+      } 
+      &.export-icon{
+        width: 13px;
+        height: 13px;
+        background-position: -45px -233px;
+      } 
+      &.merge-icon{
+        width: 13px;
+        height: 9px;
+        background-position: -45px -249px;
+      }
+      &.writeoff-icon{
+        width: 14px;
+        height: 15px;
+        background-position: -45px -261px;
+      }
+      &.reminder-icon{
+        width: 13px;
+        height: 8px;
+        background-position: -45px -145px;
+      }
+      &.void-icon{
+        width: 13px;
+        height: 13px;
+        background-position: -45px -279px;
+      }
+      &.approved-icon{
+        width: 13px;
+        height: 13px;
+        background-position: -45px -156px;
+      }
+      &.rejected-icon{
+        width: 13px;
+        height: 13px;
+        background-position: -45px -184px;
+      }
+      &.cancelled-icon{
+        width: 14px;
+        height: 13px;
+        background-position: -45px -200px;
+      }
+      &.cancelled-icon{
+        width: 14px;
+        height: 13px;
+        background-position: -45px -200px;
+      }
+      &.inccreated-icon{
+        width: 9px;
+        height: 9px;
+        background-position: -47px -295px;
+      }
+      &.incedit-icon{
+        width: 11px;
+        height: 11px;
+        background-position: -46px -307px;
+      }
+      &.incsent-icon{
+        width: 11px;
+        height: 8px;
+        background-position: -46px -321px;
+      }
+      &.incemail-icon{
+        width: 11px;
+        height: 8px;
+        background-position: -46px -332px;
+      }
+      &.inccomment-icon{
+        width: 11px;
+        height: 11px;
+        background-position: -46px -343px;
+      }
+      &.incclock-icon{
+        width: 12px;
+        height: 12px;
+        background-position: -45px -357px;
+      }
+      &.incvoid-icon{
+        width: 11px;
+        height: 10px;
+        background-position: -46px -372px;
+      }
+      &.incpaid-icon{
+        width: 12px;
+        height: 12px;
+        background-position: -45px -385px;
+      }
+      &.incdollar-icon{
+        width: 6px;
+        height: 11px;
+        background-position: -48px -400px;
+      }
+
+      //forth   
+      &.setting-icon{
+        width: 15px;
+        height: 15px;
+        background-position: -62px 0px;
+      } 
+      &.pin-icon{
+        width: 11px;
+        height: 14px;
+        background-position: -64px -17px;
+      }
+      &.user-icon{
+        width: 14px;
+        height: 16px;
+        background-position: -63px -34px;
+      }
+      &.phone-icon{
+        width: 11px;
+        height: 16px;
+        background-position: -63px -53px;
+      }
+      &.email-icon{
+        width: 13px;
+        height: 10px;
+        background-position: -63px -71px;
+      }
+      &.globe-icon{
+        width: 13px;
+        height: 13px;
+        background-position: -63px -84px;
+      }
+      &.edit-icon{
+        &:not(.lg){
+          width: 14px;
+          height: 14px;
+          &:not(.white){
+            background-position: -62px -297px;
+          }
+          &.white{
+            background-position: -62px -314px;
+          }
+        }
+        &.lg{
+          width: 16px;
+          height: 16px;
+          background-position: -2px -164px;
+        }
+      }
+      &.paperclip-icon{ 
+        width: 13px;
+        height: 14px;
+        &:not(.white){
+          background-position: -63px -331px;
+        }
+        &.white{
+          background-position: -63px -348px;
+        }
+      }     
+      &.book-icon{ 
+        width: 11px;
+        height: 14px;
+        &:not(.white){
+          background-positions: -64px -365px;
+        }
+        &.white{
+          background-position: -64px -382px;
+        }
+      } 
+      &.lock-icon{
+        width: 11px;
+        height: 14px;
+        background-position: -64px -427px;
+      }
+      &.date-icon{
+        width: 12px;
+        height: 13px;
+        background-position: -63px -498px;
+      }
+      &.calendar-icon{
+        width: 12px;
+        height: 13px;
+        &:not(.white){  
+          background-position: -63px -498px;
+        }
+        &.white{
+          background-position: -63px -514px;
+        }
+      }
+      &.geo-icon{
+        width: 15px;
+        height: 15px;
+        background-position: -62px -461px;
+      }
+      &.check-icon{
+        width: 10px;
+        height: 8px;
+        &:not(.black){  
+          background-position: -64px -541px;
+        }
+        &.black{
+          background-position: -64px -530px;
+        }
+        
+      }
+      &.upload-icon{
+        width: 13px;
+        height: 13px;
+        &:not(.white){    
+          background-position: -63px -100px;
+        }
+        &.white{
+          background-position: -63px -116px;
+        }
+      }
+      &.note-icon{
+        width: 13px;
+        height: 14px;
+        &:not(.white){    
+          background-position: -63px -132px;
+        }
+        &.white{
+          background-position: -63px -149px;
+        }
+      }
+      &.t-icon{
+        width: 13px;
+        height: 14px;
+        &:not(.white){    
+          background-position: -63px -165px;
+        }
+        &.white{
+          background-position: -63px -171px;
+        }
+      }
+      &.more-icon{
+        width: 13px;
+        height: 5px;
+        &:not(.red){    
+          background-position: -63px -165px;
+        }
+        &.white{
+          background-position: -63px -171px;
+        }
+      } 
+      &.details-icon{
+        width: 13px;
+        height: 5px;
+        &:not(.red){    
+          background-position: -63px -165px;
+        }
+        &.white{
+          background-position: -63px -171px;
+        }
+      }     
+      &.close-icon{                
+        &:not(.red){
+          width: 12px;
+          height: 12px;             
+          background-position: -63px -219px;        
+        }
+        &.red{
+          width: 12px;
+          height: 12px;
+          background-position: -63px -248px;        
+        }
+        &.sm{
+          width: 9px;
+          height: 9px;
+          background-position: -65px -552px;  
+        }
+      } 
+      &.delete-icon{
+        width: 12px;
+        height: 14px;
+        &:not(.white){
+          background-position: -63px -263px;
+        }
+        &.white{
+          background-position: -63px -280px;
+        }
+      }  
+      //fifth
+      &.fax-icon{
+        width: 14px;
+        height: 14px;
+        background-position: -81px -2px;
+      }
+      &.skype-icon{
+        width: 15px;
+        height: 15px;
+        background-position: -80px -20px;
+      }
+      &.per-icon{
+        width: 9px;
+        height: 10px;
+        background-position: -80px -20px;
+      }
+      &.dollar-icon{
+        width: 6px;
+        height: 12px;
+        background-position: -81px -2px;
+      }
+      &.twitter-icon{
+        width: 15px;
+        height: 11px;
+        background-position: -80px -66px;
+      }
+      &.linkedin-icon{
+        width: 12px;
+        height: 12px;
+        background-position: -82px -80px;
+      }
+      &.facebook-icon{
+        width: 7px;
+        height: 14px;
+        background-position: -85px -95px;
+      }
+      &.wikipedia-icon{
+        width: 14px;
+        height: 10px;
+        background-position: -81px -112px;
+      }
+      &.accounts-icon{
+        width: 16px;
+        height: 13px;
+        background-position: -81px -125px;
+      }
+      &.assignment-alert-icon{
+        width: 13px;
+        height: 13px;
+        background-position: -84px -144px;
+      }
+      &.pdf-icon{
+        width: 12px;
+        height: 15px;       
+        &:not(.white){
+          background-position: -63px -576px;
+        }
+        &.white{
+         
+        }
+      } 
+      &.uploadfile-icon{
+        width: 45px;
+        height: 37px;
+        background-position: -99px -79px;
+      } 
+      &.bell-icon{
+        width: 13px;
+        height: 15px;
+        background-position: -82px -157px;
+      }    
+      &.sms-icon{
+        width: 15px;
+        height: 15px;
+        background-position: -80px -174px;
+      }   
+    }   
+    
+    
+    
+        
+    
+    
+  }
+}
+/*a,
+button{
+  &.blue{
+    i{
+      &.svg{ 
+        &.plus-icon{
+          width: 10px;
+          height: 10px;
+          margin-right: 4px;
+          background-position: -4px -93px;  
+          &.black{
+            background-position: -6px -280px;
+          }
+        }
+      }
+    }
+  }
+}*/
+
+a,
+button{
+  i{
+    &.svg{  
+      &.solid{
+        
+      }
+            
+
+       
+      
+    }
+  }
+  &.active{
+    i{
+      &.svg{ 
+        &.solid{  
+          &.pin-icon{
+            background-position: -26px -299px;
+          } 
+        }
+      }
+    }
+  }
+  &.default{
+    i{
+      &.svg{        
+        &.plus-icon{
+          &:not(.black){  
+            background-position: -5px -121px;  
+          }
+        }
+      }
+    }
+  } 
+  &.btn{
+    &.red{
+      i{
+        &.svg{
+          &:not(.red){
+            &.close-icon{
+              width: 12px;
+              height: 12px;
+              background-position: -63px -233px;
+            }            
+          }
+        }
+      }
+    }
+  }
+}
+
+
+i{
+  &.zmdi-menu{
+    width: 13px;
+    height: 1px;
+    display: block;
+    position: relative;
+    background: #707070;
+    &:before{
+      width: 13px;
+      height: 1px;
+      content: "";
+      top: -4px;
+      left: 0;
+      right: 0;
+      position: absolute;
+      background: #707070;
+    }
+    &:after{
+      width: 13px;
+      height: 1px;
+      content: "";
+      top: 4px;
+      left: 0;
+      right: 0;
+      position: absolute;
+      background: #707070;
+    }
+  }
+}
+
+
+.red.btn .delete-icon{
+   background-position: -63px -280px !important;
+}
+.items{
+i{   
+  position: relative; 
+  &.customer-icon{
+    &:before{
+      width: 20px;
+      height: 21px;
+      content: "";
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      position: absolute;
+      background: url(../img/svg/sa.png) no-repeat -4px 0px;
+    }
+  }  
+  &.user-icon{
+    &:before{
+      width: 28px;
+      height: 24px;
+      content: "";
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      position: absolute;
+      background: url(../img/svg/sa.png) no-repeat 0px -29px;
+    }
+  }
+}
+}
+
+span{
+  &.glyphicon{
+    position: relative;
+    display: inline-block;
+    background: url(../img/svg/sprites.svg) no-repeat;
+    &.glyphicon-calendar{    
+      width: 12px;
+      height: 13px; 
+      background-position: -63px -498px;
+      &:before{
+        display: none;
+      }
+    }
+  }
+}
+
+span{
+  &.pi{
+    position: relative;
+    display: inline-block;
+    background: url(../img/svg/sprites.svg) no-repeat;
+    &.pi-plus{    
+      width: 12px;
+      height: 13px; 
+      background-position: -5px -108px;
+      &:before{
+        display: none;
+      }
+    }
+  }
+}
+
+.calendar-head{
+  .item-left{
+    .ng-placeholder:before,
+    .ng-option-label:before,
+    .ng-placeholder:before,
+    .ng-option-label:before,
+    .ng-value-label:before {
+      width: 12px;
+      height: 12px;
+      content: "";
+      top: 1px;
+      position: relative;
+      margin-right: 6px;
+      display: inline-block;
+      background: url(../img/svg/sprites.svg) no-repeat -4px -183px;
+    }
+  }
+}

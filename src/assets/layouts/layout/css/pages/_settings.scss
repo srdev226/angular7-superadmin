@@ -1,0 +1,88 @@
+.setting-gutter {
+    padding: 12px 16px;
+    .col-star-3 {
+        max-width: 310px;
+    }
+    .cog-box {
+        a {
+            height: 260px;
+            display: block;
+            line-height: 18px;
+            color: $base-font-color-4;
+            margin-bottom: 30px;
+            text-align: center;
+            border: 1px solid #fff;
+            background: #fff;
+            @include transition(all 0.2s ease-in-out);
+            .ins {
+                height: calc(100% - 70px);
+                @include flexbox;
+                @include align-items(center);
+                @include justify-content(center);
+                @include flex-direction(column);
+                i {
+                    width: 32px;
+                    height: 32px;
+                    display: block;
+                    margin-bottom: 30px;
+                    background: url(#{$layout-img-path}/svg/settings/setting-sprites.svg) no-repeat;
+                    &.crm-icon {
+                        background-position: -9px 1px !important;
+                    }
+                    &.hrms-icon {
+                        background-position: -10px -37px !important;
+                    }
+                    &.inventory-icon {
+                        background-position: -9px -74px !important;
+                    }
+                    &.accounts-icon {
+                        background-position: -10px -112px !important;
+                    }
+                    &.branding-icon {
+                        background-position: -9px -149px !important;
+                    }
+                    &.data-icon {
+                        background-position: -9px -188px !important;
+                    }
+                    &.templates-icon {
+                        background-position: -9px -225px !important;
+                    }
+                    &.notification-icon {
+                        background-position: -9px -262px !important;
+                    }
+                    &.security-icon {
+                        background-position: -10px -301px !important;
+                    }
+                    &.integration-icon {
+                        background-position: -10px -339px !important;
+                    }
+                    &.billing-icon {
+                        background-position: -9px -378px !important;
+                    }
+                }
+                h3 {
+                    font-size: $font-size-medium;
+                    font-weight: 500;
+                }
+            }
+            span {
+                height: 70px;
+                font-size: 12px;
+                padding: 2px 16px;
+                margin: 0 -1px;
+                @include flexbox;
+                @include align-items(center);
+                @include justify-content(center);
+                @include flex-direction(column);
+                border-top: 1px solid $base-border-color-1;
+                @include transition(all 0.2s ease-in-out);
+            }
+            &:hover {
+                border-color: #fa7c46;
+                span {
+                    border-color: #fa7c46;
+                }
+            }
+        }
+    }
+}

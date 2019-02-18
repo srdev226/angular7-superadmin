@@ -1,0 +1,281 @@
+.app-sidebar {
+  left: 0;
+  top: $header-height;
+  bottom: -10px;
+  width: $sidebar-space;
+  z-index: 12;
+  background: $sidebar-bkg;                                                            // include + theme color
+  //@include transition(all 0.3s ease-in-out);
+  @media (min-width: 768px){
+    position: fixed;    
+  }
+  @media (max-width: 767px){
+    position: absolute;   
+  }
+  .sidebar-toggler {   
+    margin: 10px 30px;
+  }
+  .app-sidebar-menu{    
+    @include list-unstyled;
+    /*&::-webkit-scrollbar {
+      width: 4px;
+    }*/
+    &::-webkit-scrollbar-thumb {
+      background-color: #4174a5;
+    }
+
+    >li{
+      position: relative;
+      margin-bottom: 1px;
+      &.first{
+        margin-bottom: 10px;
+      }
+      &:before{
+        width: 2px;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        content: "";
+        position: absolute;              
+      }
+      >a{
+        height: 42px;
+        font-size: $sidebar-menu-font-size;
+        color: $sidebar-menu-font-color;
+        display: block;
+        position: relative;
+        padding: 0 0 0 20px;
+        font-weight: 500;
+        @include flexbox;
+        @include align-items(center);  
+        span{
+          &.title{
+            height: 18px;
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            font-family: $font-stack-medium;
+            @include transition(all 0.3s ease-in-out);
+          }
+        }
+        >i{            
+          width: 17px;
+          min-width: 18px;
+          height: 18px;
+          opacity: 0.65;
+          display: block;
+          margin-right: 22px;
+          @include transition(all 0.3s ease-in-out); 
+          @import "../icons/sidebar-menu-icons";                                      // import sidebar menu icons    
+        }
+        &.titan{               
+          &:after{
+            width: 8px;
+            height: 8px;
+            content: "";
+            right: 25px;
+            top: 18px;
+            position: absolute;
+            /*background: url(../img/svg/sprites.svg) no-repeat -23px -19px;*/ 
+          }
+        }                
+      }  
+      &:hover {
+        a{
+          color: $sidebar-menu-font-hover-color;
+          i{
+            opacity: 1;
+          }
+        }
+      }
+      .sub-menu{
+        @include list-unstyled;
+        max-height: 0;
+        overflow: hidden;
+        @include transition(all 0.3s ease-in-out);
+        li{            
+          a{
+            height: 30px;
+            font-size: $sidebar-sub-menu-font-size;
+            color: $sidebar-sub-menu-font-color;
+            position: relative;
+            padding-left: 56px;
+            @include flexbox;
+            @include align-items(center);  
+          }
+        }
+      }  
+      &.active {
+        background: rgba(255, 255, 255, 0.06);
+        &:before{
+          background: #ff7e00;
+        }
+      }
+      &.opened {
+        background: rgba(255, 255, 255, 0.06);
+        &:before{
+          background: #ff7e00;
+        }
+        a{
+          color: $sidebar-menu-font-hover-color;
+          i{
+            opacity: 1;
+          }
+        }
+        .sub-menu{
+          max-height: 300px;
+          padding-bottom: 8px;
+        }
+      }
+                       
+    }  
+  }
+  textarea {
+    &.form-control {
+      min-height: 75px;
+    }
+  }
+}
+
+.app-sidebar-closed {
+  .app-sidebar{
+    width: $sidebar-space-sm;
+    .app-sidebar-menu{
+      >li{
+        >a{
+          width: 70px;
+          padding-right: 0;
+          span{
+            &.title{
+              left: 66px;
+              color: $base-font-color-3;
+              display: none;
+              min-width: 120px;
+              background: $base-bkg-5;
+              background: #11518e;
+              padding: 10px 20px;
+              position: absolute;
+              white-space: nowrap;
+              @include transition(all 0.25s ease-in-out);
+            }
+            &:before{
+              top: 0;
+              bottom: 0;
+              left: -8px;
+              width: 0;
+              height: 0;
+              content: '';
+              margin: auto;
+              position: absolute;
+              border-right: 8px solid #11518e;
+              border-top: 8px solid transparent;
+              border-bottom: 8px solid transparent;
+              @include transition(all 0.25s ease-in-out);
+            }
+          }
+          &.titan{
+            &:before{
+              width: 2px;
+              height: 100%;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              content: "";
+              position: absolute;              
+            }
+          }          
+        }
+        &:hover{
+          >a{
+            span{
+              &.title{
+                width: 170px;
+                height: auto;
+                display: inline;
+                overflow: visible;
+                padding-left: 15px;            
+              }
+            }
+          }
+          .sub-menu{
+            left: 66px;
+            width: 170px;
+            display: block;
+            max-height: none;
+            margin-top: -4px;
+            position: absolute;
+            background: #11518e;
+            padding-bottom: 4px;
+            li{
+              a{
+                padding-left: 14px;
+                &:before{
+                  display:none;
+                }
+                &:hover{
+                  color: rgba(255,255,255,0.8);
+                }
+              }
+            }
+          }  
+        }        
+        .sub-menu{
+          max-height: 0;
+          display: none;
+          padding-bottom: 0px;
+          @include transition(all 0.25s ease-in-out);
+        }  
+      }  
+    }
+  }      
+}
+.app-header-fixed{
+  &:not(.app-sidebar-closed){
+    .app-sidebar{
+      .app-sidebar-menu{
+        overflow: auto;
+        max-height: calc(100vh - 88px);
+        >li{
+          >a{  
+            &.titan{
+              &:after{    
+                opacity: 0.4;
+                @include transition(all 0.3s ease-in-out);
+                background: url(../img/svg/sprites.svg) no-repeat -5px -156px; 
+                transform: rotate(-90deg);
+              }
+            }                
+          }      
+          .sub-menu{
+            li{
+              a{                  
+                &.active,
+                &:hover{
+                  background: $sidebar-sub-menu-hover-bkg;
+                  &:before{
+                    background: #ff7e00;
+                  }
+                }
+              }
+            }
+          } 
+          &.opened {
+            a{
+              &:after{
+                /*background-position: -6px -63px;*/
+                opacity: 0.8;
+                transform: rotate(0deg);
+              }
+            }
+          }
+        }  
+      }
+    }  
+  }
+}
+.ani{                                                                                // ani
+  .app-sidebar{
+    @include transition(all 0.3s ease-in-out);
+  }
+}

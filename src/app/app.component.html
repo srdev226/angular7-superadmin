@@ -1,0 +1,55 @@
+
+
+<!-- <ng-container
+  *ngIf="!isLoggedIn() then login; else dashboard"
+></ng-container>
+<ng-template #login>
+  <router-outlet></router-outlet>
+</ng-template>
+<ng-template #dashboard> -->
+  <div class="app-wrapper">
+    <app-header [ngClass]="{'display-none': hideHeaderAndSidebar()}"></app-header>
+    <div class="clearfix"></div>     
+    <!-- begin container -->
+    <div class="app-container">     
+      <app-sidebar [ngClass]="{'display-none': hideHeaderAndSidebar()}"></app-sidebar>                 
+      <router-outlet></router-outlet>
+    </div>
+    <!-- end container --> 
+    <div class="clearfix"></div> 
+    <!-- begin footer -->
+    <div class="app-footer" [ngClass]="{'display-none': hideHeaderAndSidebar()}">
+      <p>&copy; 2018 FieldTitan.</p>
+      <div class="scroll-to-top">
+        <i class="icon-arrow-up"></i>
+      </div>
+    </div>
+    <!-- end footer --> 
+    <!-- <div class="app-star-sidebar-overlay"></div>
+    <div class="app-star-sidebar medium" id="data-add">
+      <div class="portlet-head">
+        <h2>Add</h2>  
+        <div class="tools">          
+          <a href="javascript:void(0);" class="close" data-toggle="tooltip" data-placement="left" data-original-title="Close"><i class="svg close-icon"></i></a>
+        </div>
+      </div> 
+      <form class="horizontal-form app-calc">
+        <div class="form-body app-grow">
+        </div>
+        <div class="form-actions"> 
+          <a href="" class="btn default"><i class="svg sm close-icon"></i> Cancel</a>
+          <button type="submit" class="btn primary"><i class="svg plus-icon"></i> Add</button>
+        </div>
+      </form>
+    </div>  -->
+  </div> 
+<!-- </ng-template> -->
+<!-- begin loader -->  
+<div [ngClass]="{'data-loader': _loadingStatus == true, 'app-loader': _loadingStatus == false}">
+  <div class="loader">
+    <svg class="circular" viewBox="25 25 50 50">
+      <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+    </svg>
+  </div>
+</div>
+<!-- end loader -->

@@ -1,0 +1,31 @@
+.notification-container{
+  .app-quick-menu{
+    top: 104px;
+  }
+  .notification-content{
+    .notification-head{
+      @include flexbox;
+      @include align-items(center);
+      margin-bottom: 14px; 
+      h3{
+        font-size: $font-size-medium;
+        color: $base-font-color-2;
+        font-weight: 500;
+        @include flex(1); 
+        @include flexbox;
+        @include align-items(center);
+      }
+      .switch-bar-col{
+        margin: 4px 0 0 20px;
+      }
+      .action{
+        width: 160px;
+      }
+    } 
+    .notification-cnt {
+      padding: 22px;
+      background: $primary-bkg;
+      border: 1px solid $base-border-color-1;
+    } 
+  }
+}

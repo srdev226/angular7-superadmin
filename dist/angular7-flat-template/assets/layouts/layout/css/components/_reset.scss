@@ -1,0 +1,352 @@
+
+body {  
+  font-size: $font-size-regular;
+  color: $regular-font-color;
+  line-height: normal;
+  background: $primary-bkg;
+  font-family: $font-stack;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  margin: 0;  
+  font-weight: 400;
+  line-height: normal;
+  font-family: $font-stack-medium;
+}
+
+h2 {
+  font-size: $font-size-medium;
+  color: $base-font-color-2;
+}
+
+/*a, 
+button, 
+code, 
+div, 
+img, 
+input, 
+label, 
+li, 
+p, 
+pre, 
+select, 
+span, 
+svg, 
+table, 
+td, 
+textarea, 
+th, 
+ul {
+  font-family: $font-stack;
+}*/
+
+.btn,
+input,
+button{
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+button, 
+.btn, 
+.btn-group.open .dropdown-toggle, 
+.cell, 
+.resource{
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+*{
+  outline: 0 !important;
+}
+
+a{
+  color: $theme-font-color;
+  outline: 0 !important;
+  text-decoration: none !important;
+}
+
+/*a:focus, */
+a:hover{
+  color: $theme-font-hover-color;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+b, strong, .bold{
+  font-weight: 500;
+}
+
+.img-circle {
+  border-radius: 50%!important;
+}
+
+figure {
+    margin: 0;
+}
+
+body .bootstrap-select .dropdown-toggle,
+body .bootstrap-select .dropdown-toggle:focus{
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+[class*=" fa-"]:not(.fa-stack), 
+[class*=" glyphicon-"], 
+[class*=" icon-"], 
+[class^=fa-]:not(.fa-stack), 
+[class^=glyphicon-], 
+[class^=icon-] {
+  /*width: 1.25em;*/
+  line-height: 14px;
+  text-align: center;
+  display: inline-block;
+}
+
+html,
+body,
+.app-wrapper,
+.app-container,
+.app-content-wrapper,
+.app-content{  
+  min-height: 100%;
+}
+
+.app-content{  
+  min-height: 100vh;
+}
+
+.display-hide {
+  display: none;
+}
+
+.padding-left-0{
+  padding-left: 0 !important;
+}
+
+/*.padding-bottom*/
+.padding-bottom-50{
+  padding-bottom: 50px;
+}
+
+/*.margin-top*/
+.margin-top-20{
+  margin-top: 20px !important;
+}
+
+.margin-top-10{
+  margin-top: 10px !important;
+}
+
+.margin-top-8 {
+  margin-top: 8px !important;
+}
+
+.margin-top-7 {
+  margin-top: 7px !important;
+}
+.margin-top-1 {
+  margin-top: 1px !important;
+}
+
+/*.margin-bottom*/
+.margin-bottom-40{
+  margin-bottom: 40px !important;
+}
+
+.margin-bottom-30{
+  margin-bottom: 30px;
+}
+
+.margin-bottom-20{
+  margin-bottom: 20px !important;
+}
+
+.margin-bottom-15{
+  margin-bottom: 15px;
+}
+
+.margin-bottom-10{
+  margin-bottom: 10px;
+}
+
+.margin-bottom-5{
+  margin-bottom: 5px;
+}
+
+.margin-bottom-0{
+  margin-bottom: 0px !important;
+}
+
+/*.margin-right*/
+.margin-right-40{
+  margin-right: 40px;
+}
+
+.margin-right-10{
+  margin-right: 10px;
+}
+
+.alpha-top{
+  padding-top: 0 !important;
+}
+
+
+.t1 {
+  text-align: left !important;
+}
+
+.t2 {
+  text-align: center !important;
+}
+
+.t3 {
+  text-align: right !important;
+}
+
+.block{
+  display: block;
+}
+
+.bkg-grey {
+    background: $primary-bkg;
+}
+
+.bkg-shadow{
+  background: $regular-bkg;
+  /*box-shadow: $regular-box-shadow;*/
+}
+
+small.hint{
+  opacity: 0.5;
+  font-size: $font-size-sm;
+}
+
+body {
+  &.app-hide{  
+    overflow: hidden;
+  }
+}
+
+tr.subtotal td{
+  background: #f9f9f9;
+}
+
+.bkg-shadow .ins {
+    padding: 20px;
+}
+
+.beta{
+  margin: 0 !important;
+}
+
+.app-checkbox-inline{
+  margin-bottom: -15px;
+}
+
+.app-body{
+  overflow: hidden;
+}
+
+.clear {
+    float: right;
+    font-size: 90%;
+}
+
+.customize-row{
+  margin-left: -6px !important;
+  margin-right: -6px !important;
+}
+
+.customize-col{
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+
+.input-group-addon.no{
+  border: 0;
+  background: transparent;
+}
+
+.no-border{
+  border: 0 !important;
+}
+.hide{
+  display: none !important;
+}
+
+.ovh{
+  overflow: hidden;
+}
+
+::-webkit-scrollbar-track {
+    background-color: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 10px;
+    background-color: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+.bs-caret{
+  display: none;
+}
+
+.dropdown-toggle::after{
+      margin-left: 0;
+}
+
+@media(min-width: 1600px){
+  .horizontal-form{
+   
+  }
+  .rwinfo{
+    margin-left: -100px;
+    margin-right: -100px;
+  }
+
+  .clinfo{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.booking-container{
+  display: none;
+}
+
+.app-star-sidebar{
+.feed-list{
+  li{
+    margin-bottom: 12px;
+    .top-feed{
+      display: flex;
+      figure{
+        margin-right: 12px;
+      }
+    }
+    .bottom-feed{
+      margin-bottom: 8px;
+      overflow: hidden;
+    }
+  }
+}
+}
+
+.pull-right{
+  float: right;
+}

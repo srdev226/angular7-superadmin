@@ -1,0 +1,86 @@
+.ribbon {
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: 5px;
+  min-width: 90px;
+  position: absolute;
+  background: #27a4b0;
+  display: inline-block;
+  padding-left: 14px;
+}
+
+/*.ribbon:before{
+  content: "";
+  border-style: solid;
+  border-width: 6px;
+  display: block;
+  position: absolute;
+  bottom: -12px;
+  left: 0px;
+  border-color: #7e9b02 #7e9b02 transparent transparent;
+}*/
+
+.ribbon.paid {
+  background: #0ad008;
+}
+
+.ribbon.paid:before{
+  border-color: #0ad008 #0ad008 transparent transparent;
+}
+
+.ribbon.sent {
+  background: #f6c342;
+}
+
+.ribbon.sent:before{
+  border-color: #e2b135 #e2b135 transparent transparent;
+}
+
+.ribbon.draft {
+  background: #94a5a6;
+}
+
+.ribbon.draft:before{
+  border-color: #788e8f #788e8f transparent transparent;
+}
+
+.ribbon.overdue {
+  background: #f59d00;
+}
+
+.ribbon.overdue:before{
+  border-color: #c27c00 #c27c00 transparent transparent;
+}
+
+.ribbon.void {
+  background: #474747;
+}
+
+.ribbon.void:before{
+  border-color: #333 #333 transparent transparent;
+}
+
+.ribbon.due {
+  background: #ed6b75;
+}
+
+.ribbon.due:before{
+  border-color: #ed6b75 #ed6b75 transparent transparent;
+}
+
+.ribbon.cancelled {
+  background: #ed6b75;
+}
+
+.ribbon.cancelled:before{
+  border-color: #ed6b75 #ed6b75 transparent transparent;
+}
+
+.ribbon.partially-paid {
+  background: #1fcd6d;
+}
+
+.ribbon.paid:before{
+  border-color: #18a155 #18a155 transparent transparent;
+}

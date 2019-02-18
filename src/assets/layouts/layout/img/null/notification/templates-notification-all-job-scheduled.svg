@@ -1,0 +1,62 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="181" height="122" viewBox="0 0 181 122">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eef3fe;
+      }
+
+      .cls-1, .cls-2, .cls-5, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #5387ff;
+      }
+
+      .cls-3, .cls-4, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-4, .cls-6 {
+        stroke: #e3e3e3;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+      }
+
+      .cls-5, .cls-7, .cls-9 {
+        fill: #858bec;
+      }
+
+      .cls-7 {
+        opacity: 0.4;
+      }
+
+      .cls-8 {
+        fill: #ffd64d;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M19,67.019c0.518-12.348,3.106-22.638,28.987-30.87S81.739,24.287,94.68,16.569c10.426-6.394,42.473-5.832,57.974,15.435,10.784,14.8,10.007,34.037-2.07,47.334-10.26,11.3-31.5,20.432-52.8,24.7-21.692,4.344-37.893,1.057-53.939-5.117S18.655,81.768,19,67.019Z"/>
+  <g id="job">
+    <path id="Forma_1" data-name="Forma 1" class="cls-2" d="M92,73c0,1.095-.255,2-2,2H77c-1.867,0-2-1.049-2-2V66H46V86a6.679,6.679,0,0,0,2.258,4.677C49.559,91.985,51.174,92,53,92h62a5.9,5.9,0,0,0,6-6V66H92v7h0ZM77,66H90v7H77V66Z"/>
+    <path id="Forma_1_copy_8" data-name="Forma 1 copy 8" class="cls-2" d="M52,40c-5.784,0-6,4.044-6,8V64h75V48c0-4.341-1.43-8-7-8H52Z"/>
+    <path id="Forma_1_copy_7" data-name="Forma 1 copy 7" class="cls-2" d="M70,31H96c2.628,0,3,.366,3,2v7H68V34C68,32.5,68.289,31,70,31Z"/>
+    <rect class="cls-3" x="72" y="35" width="23" height="5"/>
+  </g>
+  <g id="Calener">
+    <rect id="Rounded_Rectangle_602" data-name="Rounded Rectangle 602" class="cls-4" x="107" y="59" width="43" height="38" rx="6" ry="6"/>
+    <path class="cls-5" d="M107,68c-0.072-.007-0.2,0-0.421,0-0.008-.508.005-2.779,0.005-3.033,0-.481-0.751-5.969,6.316-6.51,6.649,0,32.478.114,32.124,0.114,0,0,5.126-.366,4.976,6.426v3.031Z"/>
+    <path id="Rounded_Rectangle_600" data-name="Rounded Rectangle 600" class="cls-6" d="M116.854,57.993c1.21,0,1.375,1.268,1.341,1.928v2.7c0.036,0.66.05,1.8-1.35,1.8a1.459,1.459,0,0,1-1.35-1.8v-2.7C115.47,59.26,115.669,57.989,116.854,57.993Zm11.688,0.078a1.393,1.393,0,0,1,1.353,1.851v2.7c-0.033.661-.22,1.84-1.314,1.84a1.436,1.436,0,0,1-1.386-1.84v-2.7C127.229,59.261,127.169,58.071,128.542,58.071Zm11.741,0.022c1.4,0,1.346,1.168,1.312,1.829v2.7c-0.033.661,0.088,1.836-1.294,1.836-1.516,0-1.406-1.17-1.406-1.836v-2.7C138.86,59.256,138.824,58.093,140.283,58.093Z"/>
+    <rect id="Rounded_Rectangle_601" data-name="Rounded Rectangle 601" class="cls-7" x="113" y="73" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy" data-name="Rounded Rectangle 601 copy" class="cls-7" x="122" y="73" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_2" data-name="Rounded Rectangle 601 copy 2" class="cls-8" x="132" y="73" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_3" data-name="Rounded Rectangle 601 copy 3" class="cls-7" x="141" y="73" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_4" data-name="Rounded Rectangle 601 copy 4" class="cls-7" x="113" y="81" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_4-2" data-name="Rounded Rectangle 601 copy 4" class="cls-7" x="122" y="81" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_4-3" data-name="Rounded Rectangle 601 copy 4" class="cls-7" x="132" y="81" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_4-4" data-name="Rounded Rectangle 601 copy 4" class="cls-7" x="141" y="81" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_5" data-name="Rounded Rectangle 601 copy 5" class="cls-7" x="113" y="89" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_5-2" data-name="Rounded Rectangle 601 copy 5" class="cls-9" x="122" y="89" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_5-3" data-name="Rounded Rectangle 601 copy 5" class="cls-7" x="132" y="89" width="4" height="4" rx="1" ry="1"/>
+  </g>
+</svg>

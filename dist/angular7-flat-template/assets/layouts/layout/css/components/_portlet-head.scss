@@ -1,0 +1,105 @@
+.portlet-head {
+  height: 52px;
+  z-index: 2;
+  padding: 0 20px;
+  background: $portlet-head-bkg;
+  position: relative;
+  @include flexbox;
+  @include align-items(center);
+  /*box-shadow: $head-shadow;*/
+  &.tabbable-line{
+    padding-left: 0;
+    ul.nav{
+      @include flex(1);
+      > li{
+        > a{
+          color: #fff;
+          padding: 18px 15px;
+        }
+      }
+    }
+  }
+  h2{
+    margin: 0;
+    padding: 0;
+    /*color: #fff;*/
+    font-size: $font-size-medium;
+    @include flex(1);
+    a.back{
+      font-size: 19px;
+      position: relative;
+      top: 2px;
+      left: -2px;
+      margin-right: 6px;
+      opacity: 0.8;
+    }
+  }  
+  .tools{
+    @include flexbox;
+    @include align-items(center);  
+    span{
+      position: relative;
+      input[type=file]{
+        position: absolute;
+        font-size: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border: 0;
+        background: transparent;
+        z-index: 9;
+        text-indent: -99999px;
+        outline: 0;
+      }
+    }
+    .no-a{      
+      a{
+        margin-left: inherit;
+        font-size: inherit;
+        opacity: 1;
+      }
+      > a{
+        margin-left: 10px;
+      }
+    }
+    a{
+      color: $portlet-head-tool-font-color;
+      font-size: $portlet-head-tool-font-size;
+      margin-left: 14px;
+      display: block;
+      opacity: 0.8;
+      position: relative;
+      span.light-txt{
+        color: #888;
+      }  
+      &:hover{
+        opacity: 1;
+        color: $theme-font-hover-color;
+      }
+      i{
+        font-size: $portlet-head-tool-icon-size;
+        &.close-icon{
+          margin: 0;
+          background-position: -63px -233px !important;
+        }
+        &.fa-paperclip{
+          transform: rotate(-90deg);
+        }
+        &.fa {
+          font-size: $portlet-head-tool-fa-size;
+        }
+      }
+      input[type=file] {
+        right: 0px;
+        top: -2px;
+        width: 100%;
+        opacity: 0;
+        z-index: 99999;
+        cursor: pointer;
+        position: absolute;
+        text-indent: 10000px;
+      }
+    }
+  }  
+}

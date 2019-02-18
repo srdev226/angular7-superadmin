@@ -1,0 +1,20 @@
+<div class="notification">
+  <div *ngIf="data.success" class="success">
+    <i class="material-icons">
+        check_circle
+    </i>
+    <p><span>{{data.name}}</span>{{" " + data.message}}</p>
+    <i class="material-icons close" (click)="onClose()">
+        close
+    </i>
+  </div>
+  <div *ngIf="!data.success" class="error">
+    <i class="material-icons">
+        error
+    </i>
+    <p><span>{{data.name}}</span>{{" " + data.message}}</p>
+    <i class="material-icons close" (click)="onClose()">
+        close
+    </i>
+  </div>    
+</div>

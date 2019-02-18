@@ -1,0 +1,33 @@
+.null-body{
+  padding: 22px;
+  .null-head{
+    color: $primary-font-color;
+    @include flexbox;
+    @include align-items(center);  
+    margin-bottom: 24px;
+    figure {
+      max-width: 150px;
+      margin-right: 20px;
+    }
+    h3{
+      color: $regular-font-color;
+      font-size: $font-size-small;
+      font-weight: 500;
+      margin: 0 0 10px 0;  
+    }
+  }
+  .list {
+    margin: 0;
+    line-height: 22px;
+    padding-left: 16px;
+    li {
+      opacity: 0.9;
+      margin-bottom: 14px;
+      padding-left: 10px;
+      list-style-type: decimal-leading-zero;
+      &:before{
+      display: none;
+      }
+    }
+  }
+}

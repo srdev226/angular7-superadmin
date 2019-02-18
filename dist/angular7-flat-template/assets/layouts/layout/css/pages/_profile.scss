@@ -1,0 +1,188 @@
+.profile-container {
+  height: calc(100vh - 105px);
+  .profile-sidebar {
+    // sidebar
+    float: left;
+    width: 230px;
+    height: 100%;
+    left: -6px;
+    top: -6px;
+    background: $regular-bkg;
+    position: relative;
+    z-index: 2;
+    @include flexbox;
+    @include flex-flow(column nowrap);
+    .in {
+      padding: 18px;
+    }
+    .top {
+    border-bottom: 1px solid $base-border-color-3;  
+      figure {
+        min-width: 80px;
+        min-height: 80px;
+        max-width: 80px;
+        max-height: 80px;
+        margin-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 100%;
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        &:before {
+          @include user-placeholder;
+        }
+        &.company {
+          &:before {
+            content: "\f0f7";
+            font: normal normal normal 22px/1 FontAwesome;
+          }
+        }
+        img {
+          max-width: 80px;
+          max-height: 80px;
+          position: relative;
+          z-index: 1;
+        }
+      }
+      .cnt {
+        max-width: 160px;
+      }
+      h3 {
+        font-size: 16px;
+        margin: 0 0 4px 0;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-family: $font-stack-bold;
+      }
+      p {
+        margin: 0;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .middle {      
+      border-bottom: 1px solid $base-border-color-3;  
+      h3 {
+        font-size: 16px;
+        margin: 0 0 12px 0;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-family: $font-stack-medium;
+      }
+      .list-unstyled {
+        margin-bottom: 0;
+        li {
+          color: $regular-font-color;
+          margin-bottom: 12px;
+          @include flexbox;
+          @include align-items(center);
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            color: inherit;
+            max-width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            word-break: break-all;
+          }
+          span {
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &.dec-items {
+              .dec-item {
+                word-break: break-all;
+              }
+            }
+          }
+          i {
+            top: 1px;
+            min-width: 12px;
+            font-size: 14px;
+            margin-right: 8px;
+            position: relative;
+          }
+        }
+      }
+    }
+    .bottom {
+      @include flex-grow;
+    }
+    .tab-container {
+      padding-top: 12px;
+      .nav {
+        li {
+          width: 100%;
+          a {
+            display: block;
+            color: $base-font-color-4;
+            padding: 10px 22px;
+            font-family: $font-stack-semibold;
+            &:hover {
+              color: $base-font-color-6; // include + theme color
+            }
+            &.active {
+              color: $base-font-color-6;
+            }
+          }          
+        }
+      }
+    }
+  }
+  .profile-content {
+    // contents
+    height: 100%;
+    overflow: hidden;
+    .flex-scroll {
+      @include flex-grow;
+    }
+    .in {
+      padding-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .profile-container {
+    height: 100%;
+    .profile-sidebar {
+      position: fixed;
+      right: -600px;
+      top: 102px;
+      z-index: 5;
+      @include transition(all 0.3s ease-in-out);
+      .tab-container .nav li {
+        &.active {
+          a {
+            &:after {
+              right: auto;
+              left: 14px;
+              content: "\f2fa";
+            }
+          }
+        }
+        a {
+          padding-left: 32px;
+        }
+      }
+    }
+  }
+  .app-quick-menu-fixed {
+    .profile-container {
+      .profile-sidebar {
+        right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+&.app-cc-quick {
+  .form-body{
+    padding: 0;
+    height: 100%; 
+    .app-calc{
+      height: calc(100% - 40px);      
+    }    
+    table{
+      &.cc-table{
+        margin-bottom: 0;
+        thead.none,
+        tbody.none{
+          display: none;
+        } 
+        tr{
+          th{
+            border:0;
+            padding: 10px 20px;
+            label {
+              font-weight: inherit;
+            }
+          }
+          td{
+            border:0;
+            padding: 10px 20px;
+          }
+          label {
+            float: right;
+            color: $th-font-color;
+            margin-bottom: 0;
+            padding-left: 16px;
+          }
+        }
+      }
+    } 
+  }  
+}
+
+.app-cc {
+  &.form-body{
+    padding:0;
+    height: 100%;  
+    .app-calc{
+      height: calc(100% - 40px);      
+    }  
+    table{
+      &.cc-table{
+        margin-bottom: 0; 
+        thead.none,
+        tbody.none{
+          display: none;
+        } 
+        tr{
+          th{
+            border:0;
+            padding: 10px 20px;
+            label {
+              font-weight: inherit;
+            }
+          }
+          td{
+            border:0;
+            padding: 10px 20px;
+          }
+          label {
+            float: right;
+            color: $th-font-color;
+            margin-bottom: 0;
+            padding-left: 16px;
+          }
+        }
+      }
+    }
+  }  
+}

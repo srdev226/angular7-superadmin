@@ -1,0 +1,70 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="181" height="122" viewBox="0 0 181 122">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eef3fe;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-7, .cls-8 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #eeb907;
+      }
+
+      .cls-3, .cls-5, .cls-6, .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #5387ff;
+      }
+
+      .cls-6, .cls-8 {
+        stroke: #e3e3e3;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+      }
+
+      .cls-11, .cls-7, .cls-9 {
+        fill: #858bec;
+      }
+
+      .cls-9 {
+        opacity: 0.4;
+      }
+
+      .cls-10 {
+        fill: #ffd64d;
+      }
+    </style>
+  </defs>
+  <path id="Shape_702_copy" data-name="Shape 702 copy" class="cls-1" d="M19,67.019c0.518-12.348,3.106-22.638,28.987-30.87S81.739,24.287,94.68,16.569c10.426-6.394,42.473-5.832,57.974,15.435,10.784,14.8,10.007,34.037-2.07,47.334-10.26,11.3-31.5,20.432-52.8,24.7-21.692,4.344-37.893,1.057-53.939-5.117S18.655,81.768,19,67.019Z"/>
+  <g id="clock_copy" data-name="clock copy">
+    <circle class="cls-2" cx="134" cy="42" r="9"/>
+    <path id="Forma_1" data-name="Forma 1" class="cls-3" d="M138,42.385h-3.5V37.538c0-.4-0.258-0.533-0.755-0.533a0.669,0.669,0,0,0-.746.724v5.536a0.721,0.721,0,0,0,.709.732L138,44c0.931,0,1-.33,1-0.734A0.808,0.808,0,0,0,138,42.385Z"/>
+  </g>
+  <g id="job">
+    <path id="Forma_1-2" data-name="Forma 1" class="cls-4" d="M91,73c0,1.095-.255,2-2,2H76c-1.867,0-2-1.049-2-2V66H45V86a6.679,6.679,0,0,0,2.258,4.677C48.559,91.985,50.174,92,52,92h62a5.9,5.9,0,0,0,6-6V66H91v7h0ZM76,66H89v7H76V66Z"/>
+    <path id="Forma_1_copy_8" data-name="Forma 1 copy 8" class="cls-4" d="M51,40c-5.784,0-6,4.044-6,8V64h75V48c0-4.341-1.43-8-7-8H51Z"/>
+    <path id="Forma_1_copy_7" data-name="Forma 1 copy 7" class="cls-4" d="M69,31H95c2.628,0,3,.366,3,2v7H67V34C67,32.5,67.289,31,69,31Z"/>
+    <rect class="cls-5" x="71" y="36" width="23" height="4"/>
+  </g>
+  <g id="Calener">
+    <rect id="Rounded_Rectangle_602" data-name="Rounded Rectangle 602" class="cls-6" x="107" y="60" width="42" height="37" rx="6" ry="6"/>
+    <path class="cls-7" d="M106,68.031S104.522,59,112,59h32s6,0.306,6,6v3.031H106Z"/>
+    <path id="Rounded_Rectangle_600" data-name="Rounded Rectangle 600" class="cls-8" d="M115.854,57.993c1.21,0,1.375,1.268,1.341,1.928v2.7c0.036,0.66.05,1.8-1.35,1.8a1.459,1.459,0,0,1-1.35-1.8v-2.7C114.47,59.26,114.669,57.989,115.854,57.993Zm11.688,0.078a1.393,1.393,0,0,1,1.353,1.851v2.7c-0.033.661-.22,1.84-1.314,1.84a1.436,1.436,0,0,1-1.386-1.84v-2.7C126.229,59.261,126.169,58.071,127.542,58.071Zm11.741,0.022c1.4,0,1.346,1.168,1.312,1.829v2.7c-0.033.661,0.088,1.836-1.294,1.836-1.516,0-1.406-1.17-1.406-1.836v-2.7C137.86,59.256,137.824,58.093,139.283,58.093Z"/>
+    <rect id="Rounded_Rectangle_601" data-name="Rounded Rectangle 601" class="cls-9" x="112" y="73" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy" data-name="Rounded Rectangle 601 copy" class="cls-9" x="121" y="73" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_2" data-name="Rounded Rectangle 601 copy 2" class="cls-10" x="131" y="73" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_3" data-name="Rounded Rectangle 601 copy 3" class="cls-9" x="140" y="73" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_4" data-name="Rounded Rectangle 601 copy 4" class="cls-9" x="112" y="81" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_4-2" data-name="Rounded Rectangle 601 copy 4" class="cls-9" x="121" y="81" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_4-3" data-name="Rounded Rectangle 601 copy 4" class="cls-9" x="131" y="81" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_4-4" data-name="Rounded Rectangle 601 copy 4" class="cls-9" x="140" y="81" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_5" data-name="Rounded Rectangle 601 copy 5" class="cls-9" x="112" y="89" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_5-2" data-name="Rounded Rectangle 601 copy 5" class="cls-11" x="121" y="89" width="4" height="4" rx="1" ry="1"/>
+    <rect id="Rounded_Rectangle_601_copy_5-3" data-name="Rounded Rectangle 601 copy 5" class="cls-9" x="131" y="89" width="4" height="4" rx="1" ry="1"/>
+  </g>
+</svg>

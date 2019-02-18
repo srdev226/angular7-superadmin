@@ -1,0 +1,118 @@
+<div class="horizontal-form details-info">
+  <div class="form-body">
+    <div class="applet-container">
+      <div class="applet-head">
+        <h2>Primary Information</h2>
+        <div class="tools">
+          <a href="javascript:void(0);" class="data-collapse" data-toggle="tooltip" data-placement="left" data-original-title="Collapse/Expand"><i class="svg down-icon"></i></a>
+        </div>
+      </div>
+      <div class="applet-body">
+        <div class="row rwinfo">
+          <div class="col-md-6 clinfo">
+            <div class="form-group">
+              <label class="control-label">First Name :</label>
+              <span class="form-control-static">{{profile ? (profile.salutation + profile.first_name) : ''}}</span>
+            </div>
+          </div>
+          <div class="col-md-6 clinfo">
+            <div class="form-group">
+              <label class="control-label">Last Name :</label>                                      
+              <span class="form-control-static">{{profile ? profile.last_name : ''}}</span>
+            </div>
+          </div>
+          <div class="col-md-6 clinfo">
+            <div class="form-group">
+              <label class="control-label">Business Email :</label>
+              <span class="form-control-static">{{profile ? profile.email : ''}}</span>
+            </div>
+          </div>
+          <div class="col-md-6 clinfo">
+            <div class="form-group">
+              <label class="control-label">Phone :</label>
+              <span class="form-control-static">{{profile ? profile.phone : ''}}</span>
+            </div>
+          </div>                  
+        </div>
+      </div>
+    </div>
+    <div class="applet-container">
+      <div class="applet-head">
+        <h2>Company Information</h2>
+        <div class="tools">
+          <a href="javascript:void(0);" class="data-collapse" data-toggle="tooltip" data-placement="left" data-original-title="Collapse/Expand"><i class="svg down-icon"></i></a>
+        </div>
+      </div>
+      <div class="applet-body">
+        <div class="row rwinfo">
+          <div class="col-md-6 clinfo">
+            <div class="form-group">
+              <label class="control-label">Company Name :</label>
+              <span class="form-control-static">{{customerDetails.organization_details ? customerDetails.organization_details.name : ''}}</span>
+            </div>
+          </div>
+          <div class="col-md-6 clinfo">
+            <div class="form-group">
+              <label class="control-label">Claim your Site :</label>                                      
+              <span class="form-control-static">{{customerDetails.organization_details ? customerDetails.organization_details.url : ''}}</span>
+            </div>
+          </div>
+          <div class="col-md-6 clinfo">
+            <div class="form-group">
+              <label class="control-label">Industry :</label>
+              <span class="form-control-static">{{customerDetails.organization_details ? customerDetails.organization_details.industry.name : ''}}</span>
+            </div>
+          </div>
+          <!-- <div class="col-md-6 clinfo">
+            <div class="form-group">
+              <label class="control-label">Country :</label>
+              <span class="form-control-static">{{customerDetails.organization_details ? customerDetails.organization_details.address.country.country_name : ''}}</span>
+            </div>
+          </div> -->
+          <div class="col-md-6 clinfo">
+            <div class="form-group">
+              <label class="control-label">Currency :</label>
+              <span class="form-control-static">{{customerDetails.organization_details ? customerDetails.organization_details.currency.name : ''}}</span>
+            </div>
+          </div>      
+          <div class="col-md-6 clinfo">
+            <div class="form-group">
+              <label class="control-label">Timezone :</label>
+              <span class="form-control-static">{{customerDetails.organization_details ? customerDetails.organization_details.timezone.name : ''}}</span>
+            </div>
+          </div>    
+          <!-- <div class="col-md-6 clinfo">
+            <div class="form-group">
+              <label class="control-label">Business Location :</label>
+              <span class="form-control-static">Suite 202, 600 E. John Carpenter Fwy Irving, Texas 75062 </span>
+            </div>
+          </div>   
+          <div class="col-md-6 clinfo">
+            <div class="form-group">
+              <label class="control-label">Business Timings :</label>
+              <span class="form-control-static">Open: 8:00 AM - Close: 5:00 PM <br/>Mon - Fri</span>
+            </div>
+          </div>                       -->
+        </div>
+      </div>
+    </div>
+    <div class="applet-container">
+      <div class="applet-head">
+        <h2>Portal Access</h2>
+        <div class="tools">
+          <a href="javascript:void(0);" class="data-collapse" data-toggle="tooltip" data-placement="left" data-original-title="Collapse/Expand"><i class="svg down-icon"></i></a>
+        </div>
+      </div>
+      <div class="applet-body">
+        <div class="row rwinfo">
+          <div class="col-md-6 clinfo">
+            <div class="form-group">
+              <label class="control-label">Portal Access :</label>
+              <span class="form-control-static">{{profile ? (profile.status === 'Active' ? 'Enabled' : 'Disabled') : ''}}</span>
+            </div>
+          </div>                     
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>

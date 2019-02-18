@@ -1,0 +1,21 @@
+
+&.search-icon{                                                     // header top right icons
+  &:before{
+    background-position: -1px -1px !important;
+  }
+}
+&.add-icon{
+  &:before{
+    background-position: -1px -20px !important;
+  }
+}
+&.settings-icon{
+  &:before{
+    background-position: -1px -38px !important;
+  }
+}
+&.bell-icon{
+  &:before{
+    background-position: -1px -57px !important;
+  }
+}

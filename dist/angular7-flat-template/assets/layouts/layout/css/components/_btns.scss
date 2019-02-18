@@ -1,0 +1,203 @@
+.btn {
+    font-size: 13px;
+    padding: 5px 10px;
+    @include radius;
+    font-family: $font-stack-medium;
+    &:disabled {
+        opacity: 0.4 !important;
+        &:hover {
+            opacity: 0.35 !important;
+        }
+    }
+    &.blue,
+    &.btn-blue {
+        &:not(.outline) {
+            color: $theme-btn-font-color;
+            background: $theme-btn-bkg;
+            border-color: $theme-btn-border-color;
+            &.active,
+            &:hover {
+                color: $theme-btn-font-color;
+                background: $theme-btn-hover-bkg;
+                border-color: $theme-btn-hover-border-color;
+            }
+        }
+        &.outline{
+          color: $theme-btn-outline-font-color;
+          background: $theme-btn-outline-bkg;
+          border-color: $theme-btn-outline-border-color;
+        }
+    }
+    &.grey {
+        &:not(.outline) {
+            color: $grey-btn-font-color;
+            background: $grey-btn-bkg;
+            border-color: $grey-btn-border-color;
+            &.active,
+            &:hover {
+                color: $grey-btn-font-color;
+                background: $grey-btn-hover-bkg;
+                border-color: $grey-btn-hover-border-color;
+            }
+        }
+    }
+    &.default {
+        &:not(.outline) {
+            color: $grey-btn-font-color;
+            background: $grey-btn-bkg;
+            border-color: $grey-btn-border-color;
+            &.active,
+            &:hover {
+                color: $grey-btn-font-color;
+                background: $grey-btn-hover-bkg;
+                border-color: $grey-btn-hover-border-color;
+            }
+        }
+        &.disabled {
+            background: #e0e0e0;
+        }
+    }
+    &.red {
+        &:not(.outline) {
+            color: #fff;
+            background: #e7505a;
+            border-color: #e7505a;
+            &.active,
+            &:hover {
+                color: #fff;
+                background: #e12330;
+                border-color: #dc1e2b;
+            }
+        }
+    }
+    &.green {
+        &:not(.outline) {
+            color: $theme-btn-font-color;
+            background: #0f9d58;
+            border-color: #0f9d58;
+            &.open,
+            &.active,
+            &:hover {
+                color: $theme-btn-font-color;
+                background: #038c4a;
+                border-color: #038c4a;
+            }
+        }
+    }
+    &.orange {
+        &:not(.outline) {
+            color: #fff;
+            background: #fe8300;
+            border-color: #fe8300;
+            &.open,
+            &.active,
+            &:hover {
+                color: #fff;
+                background: #f27f05;
+                border-color: #f27f05;
+            }
+        }
+    }
+    &.no-btn {
+        border-color: transparent !important;
+        background: transparent !important;
+    }
+}
+
+.open {
+    >.btn {
+        &:not(.outline) {
+            color: $grey-btn-font-color;
+            background: $grey-btn-hover-bkg;
+            border-color: $grey-btn-hover-border-color;
+        }
+    }
+}
+
+div.app-btn {
+    min-width: 18px;
+    margin-left: 16px;
+    text-align: center;
+    >a {
+        font-size: 20px;
+        color: #999;
+        &.data-pdf,
+        &.data-card {
+            font-size: 16px;
+        }
+        &.data-summary {
+            font-size: 21px;
+        }
+    }
+}
+
+.app-btn+.app-btn {
+    margin-left: 12px;
+}
+
+.app-btn.se {
+    margin-right: 24px;
+}
+
+.form-actions {
+    padding: 20px;
+    text-align: center;
+    /*border-top: 1px solid $base-border-color-1;*/
+    .btn {
+        min-width: 80px;
+        margin: 0 0 0 7px;
+    }
+}
+
+.btn.blue.se {
+    margin-right: 38px;
+}
+
+body {
+    a.btn-delete {
+        color: #ed6b75;
+        font-size: 19px;
+        &:hover {
+            color: #e73d4a;
+        }
+    }
+}
+
+.btn:not(.btn-search) {
+    &:not(:disabled) {
+        position: relative;
+        overflow: hidden;
+        &:before {
+            position: absolute;
+            top: 0;
+            left: -75%;
+            z-index: 2;
+            display: block;
+            content: '';
+            width: 50%;
+            height: 100%;
+            background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+            -webkit-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+        }
+        &:hover {
+            &:before {
+                -webkit-animation: shine 1.5s;
+                animation: shine 1.5s;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}

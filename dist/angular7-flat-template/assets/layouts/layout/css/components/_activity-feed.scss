@@ -1,0 +1,17 @@
+.portlet-container {
+  background: $regular-bkg;
+  box-shadow: $regular-box-shadow;
+  .portlet-head{
+    height: 42px;
+    padding: 0 12px;
+    background: #eee;
+    box-shadow: none;
+  }  
+}
+table.feed figure {
+  width: 34px;
+  position: relative;
+}
+.af-toggle {
+  display: none;
+}

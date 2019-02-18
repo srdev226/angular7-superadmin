@@ -1,0 +1,55 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="178" height="122" viewBox="0 0 178 122">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eef3fe;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-7 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #747aea;
+      }
+
+      .cls-3 {
+        fill: #3cb8f1;
+      }
+
+      .cls-4 {
+        fill: #5387ff;
+      }
+
+      .cls-5 {
+        fill: #fff;
+        opacity: 0.4;
+      }
+
+      .cls-6 {
+        fill: #9d9369;
+      }
+
+      .cls-7 {
+        fill: #33e2a6;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M19,68.019c0.518-12.348,3.106-22.638,28.987-30.87S81.739,25.287,94.68,17.569c10.426-6.394,42.473-5.832,57.974,15.435,10.784,14.8,10.007,34.037-2.07,47.334-10.26,11.3-31.5,20.432-52.8,24.7-21.692,4.344-37.893,1.057-53.939-5.117S18.655,82.768,19,68.019Z"/>
+  <g id="icon-2" data-name="icon">
+    <g id="Comapny">
+      <path id="Forma_1" data-name="Forma 1" class="cls-2" d="M73,100H88V84h9v16h15V30H73v70Z"/>
+      <path id="Forma_1_copy_5" data-name="Forma 1 copy 5" class="cls-3" d="M112,36v64h20V36H112Z"/>
+      <path id="Forma_1_copy_4" data-name="Forma 1 copy 4" class="cls-4" d="M73,86V36H53v64H73V86Z"/>
+      <path id="Forma_1_copy_2" data-name="Forma 1 copy 2" class="cls-5" d="M96,38h8v9H96V38Zm0,15h8v9H96V53Zm0,15h8v9H96V68ZM81,38h8v9H81V38Zm0,15h8v9H81V53Zm0,15h8v9H81V68Z"/>
+      <path id="Forma_1_copy" data-name="Forma 1 copy" class="cls-5" d="M59,44h8v8H59V44Zm0,14h8v8H59V58Zm0,14h8v8H59V72Z"/>
+      <path id="Forma_1_copy_14" data-name="Forma 1 copy 14" class="cls-5" d="M118,44h8v8h-8V44Zm0,14h8v8h-8V58Zm0,14h8v8h-8V72Z"/>
+    </g>
+  </g>
+  <g id="flower">
+    <rect class="cls-6" x="53" y="91" width="2" height="9"/>
+    <path class="cls-7" d="M53.813,92c3.164,0,4.352-1.992,4.3-1.949C58.768,89.513,60.122,73.329,54,72c-3.822.557-7.725,8.166-4.174,18.332C50.368,90.889,50.885,92,53.813,92Z"/>
+    <rect id="Rectangle_13_copy" data-name="Rectangle 13 copy" class="cls-6" x="110" y="91" width="2" height="9"/>
+    <path id="Shape_703_copy" data-name="Shape 703 copy" class="cls-7" d="M110.812,92c3.165,0,4.352-1.992,4.3-1.949C115.768,89.513,117.122,73.329,111,72c-3.822.557-7.725,8.166-4.174,18.332C107.367,90.889,107.885,92,110.812,92Z"/>
+  </g>
+</svg>

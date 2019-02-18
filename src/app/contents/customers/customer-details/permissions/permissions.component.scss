@@ -1,0 +1,39 @@
+.notification {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    div {
+        display: inline-flex;
+    }
+    .success {
+        color: green;
+    }
+    
+    .error {
+        color: red;
+    }
+    
+    .close {
+        font-size: 18px;
+        padding-top: 4px;
+    }
+
+    p {
+        margin: unset;
+        line-height: 1.7;
+        padding-left: 10px;
+        color: black;
+        width: 236px;
+        text-align: left;
+    }
+
+    .material-icons {
+        margin-left: 2px;
+    }
+
+    span {
+        color: #007bff;
+    }
+}
+

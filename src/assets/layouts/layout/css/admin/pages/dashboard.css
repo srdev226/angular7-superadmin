@@ -1,0 +1,65 @@
+/*$base-grey-header-theme-color: #607d8b;
+$base-grey-sidebar-theme-color: #2f404c;
+$base-grey-theme-color: #3b73af;
+$base-grey-theme-hover-color: #2966a7;*/
+/*$grey-theme-theme-btn-color: #1fa67e;															  // btn theme
+$grey-theme-theme-btn-hover-color: #129770;*/
+/*$aqua-theme-theme-btn-color: #1fa67e;															  // btn theme
+$aqua-theme-theme-btn-hover-color: #129770;*/
+/*$almond-theme-theme-btn-color: #1fa67e;															  // btn theme
+$almond-theme-theme-btn-hover-color: #129770;*/
+/*$green-theme-theme-btn-color: #02b1d8;															  	// btn theme
+$green-theme-theme-btn-hover-color: #05a2c5;*/
+/*$pegeon-theme-theme-btn-color: #ffa500;															  	// btn theme
+$pegeon-theme-theme-btn-hover-color: #e79601;*/
+.app-dashboard .ds-portlet {
+  padding: 14px; }
+.app-dashboard .items .item {
+  width: 190px;
+  height: 180px;
+  margin-right: 18px;
+  display: inline-block; }
+  .app-dashboard .items .item a {
+    width: 100%;
+    height: 100%;
+    color: #212121;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    transition: 0.5s;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #e3e3e3; }
+    .app-dashboard .items .item a:hover {
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1); }
+    .app-dashboard .items .item a i {
+      width: 54px;
+      height: 54px;
+      background: #ecf1f6;
+      border-radius: 100px;
+      margin-bottom: 12px; }
+    .app-dashboard .items .item a h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-family: barlow-semibold; }
+    .app-dashboard .items .item a h4 {
+      opacity: 0.8;
+      font-size: 18px;
+      font-family: barlow-regular; }
+
+/*# sourceMappingURL=dashboard.css.map */

@@ -1,0 +1,50 @@
+.ember-slide {
+  position: relative;
+  height: calc(100vh - 160px);
+  .ins {
+    height: 100%;
+    margin: 0 22px;  
+    .flex-scroll {
+      @include flex-grow;
+      padding: 20px 16px 20px 4px;
+    }
+    .flex-height {
+      height: 100%;
+    }  
+    .box-ember {
+      background: $regular-bkg;
+      margin: 2px 0 20px 0;
+      box-shadow: $regular-box-shadow;
+      figure {
+        height: 180px;
+        overflow: hidden;
+        padding: 10px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+      .action {
+        font-size: 16px;
+        text-align: center;
+        background: $primary-bkg;
+        a {
+          color: $base-font-color-2;
+          padding: 6px 8px;
+          display: inline-block;
+          &:hover, &.active {
+            color: #ed6b75;
+          }
+        }
+      }
+    }    
+  }
+  .video-box {
+    text-align: center;
+  }
+  .app-dropzone {
+    border: 0;
+    border-left: 2px dashed $base-border-color-1;
+  }
+}

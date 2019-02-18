@@ -1,0 +1,29 @@
+<div class="app-content">                      
+  <!-- begin app head-->
+  <div class="app-head">
+    <h1>Dashboard</h1>                                             
+  </div>
+  <!-- end app head-->
+  <!-- begin portlet body-->
+  <div class="portlet-body">
+    <div class="ds-portlet">
+      <div class="items">
+        <div class="item">
+          <a class="pointer" [routerLink]="['/customer/all-customers']" routerLinkActive="router-link-active">
+            <i class="customer-icon"></i>
+            <h3>{{customers}}</h3>
+            <h4>Customers</h4>
+          </a>
+        </div>
+        <div class="item">
+          <a class="pointer">
+            <i class="user-icon"></i>
+            <h3>{{users}}</h3>
+            <h4>Total users</h4>
+          </a>
+        </div>
+      </div>         
+    </div>
+  </div>
+  <!-- end portlet body--> 
+</div>

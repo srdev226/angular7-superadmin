@@ -1,0 +1,26 @@
+<!-- begin sidebar -->
+<div class="app-sidebar-wrapper">                               
+  <div class="app-sidebar"> 
+    <ul class="app-sidebar-menu">
+      <ng-container *ngFor="let menu of menus">
+        <li [ngClass]="{'opened': menu.title=='Customer'}">
+          <a *ngIf="!menu.url">          
+            <i class="{{menu.icon}}"></i> 
+            <span class="title">{{menu.title}}</span>
+          </a>
+          <a *ngIf="menu.url" [routerLink]="[menu.url]" routerLinkActive="router-link-active" [ngClass]="{'titan': menu.children.length > 0}">
+            <i class="{{menu.icon}}"></i> 
+            <span class="title">{{menu.title}}</span>
+          </a>     
+          <ul class="sub-menu" *ngIf="menu.children.length > 0">
+            <li *ngFor="let sub_menu of menu.children">
+              <a *ngIf="!sub_menu.url">{{sub_menu.title}}</a>
+              <a *ngIf="sub_menu.url" [routerLink]="[sub_menu.url]" routerLinkActive="router-link-active">{{sub_menu.title}}</a>                            
+            </li>
+          </ul>                     
+        </li>   
+      </ng-container>                                             
+    </ul>                          
+  </div>                                      
+</div>
+<!-- end sidebar -->              

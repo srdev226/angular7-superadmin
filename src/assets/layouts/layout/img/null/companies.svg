@@ -1,0 +1,74 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="171" height="127" viewBox="0 0 171 127">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eef3fe;
+      }
+
+      .cls-1, .cls-11, .cls-2, .cls-3, .cls-4, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #3cb8f1;
+      }
+
+      .cls-3 {
+        fill: #747aea;
+      }
+
+      .cls-4 {
+        opacity: 0.08;
+      }
+
+      .cls-5, .cls-6, .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-5, .cls-6 {
+        opacity: 0.4;
+      }
+
+      .cls-7 {
+        fill: #4995f2;
+      }
+
+      .cls-8 {
+        fill: #5387ff;
+      }
+
+      .cls-9 {
+        opacity: 0.35;
+      }
+
+      .cls-10 {
+        fill: #9d9369;
+      }
+
+      .cls-11 {
+        fill: #33e2a6;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M15,71.019c0.518-12.348,3.106-22.638,28.987-30.87S77.739,28.287,90.68,20.569c10.426-6.394,42.473-5.832,57.974,15.435,10.784,14.8,10.007,34.037-2.07,47.334-10.26,11.3-31.5,20.432-52.8,24.7-21.692,4.344-37.893,1.057-53.939-5.117S14.655,85.768,15,71.019Z"/>
+  <g id="icon-2" data-name="icon">
+    <path id="Rectangle_11_copy_3" data-name="Rectangle 11 copy 3" class="cls-2" d="M104,59l29-6v47.792c-0.125.371,0.108,1.239-2.573,1.208H104V59Z"/>
+    <path class="cls-3" d="M64,48H75V25l22,9,2,29h14v39H64V48Z"/>
+    <path id="Shape_704_copy" data-name="Shape 704 copy" class="cls-4" d="M98,63m15,39H64V48H75V25"/>
+    <rect class="cls-5" x="84" y="40" width="6" height="57"/>
+    <path class="cls-6" d="M98,69h6v6H98V69Zm0,11h6v6H98V80Zm0,10h6v6H98V90Z"/>
+    <path id="Rectangle_15_copy_2" data-name="Rectangle 15 copy 2" class="cls-6" d="M120,69h6v6h-6V69Zm0,11h6v6h-6V80Zm0,10h6v6h-6V90Z"/>
+    <path id="Rectangle_15_copy" data-name="Rectangle 15 copy" class="cls-6" d="M70,69h6v6H70V69Zm0,11h6v6H70V80Zm0,10h6v6H70V90Zm0-31h6v6H70V59Z"/>
+    <path id="Rectangle_11_copy_2" data-name="Rectangle 11 copy 2" class="cls-7" d="M33,51l31,4v47H35.688c-2.865.062-2.562-2-2.687-2.917V51Z"/>
+    <path class="cls-8" d="M34,51l30,4v47H36.688c-2.865.062-2.562-1-2.687-1.917V51Z"/>
+    <path class="cls-9" d="M41,63h6v6H41V63Zm13,0h6v6H54V63ZM41,75h6v6H41V75Zm13,0h6v6H54V75ZM41,87h6v6H41V87Zm13,0h6v6H54V87Z"/>
+    <g id="tree">
+      <rect class="cls-10" x="35" y="93" width="2" height="9"/>
+      <path class="cls-11" d="M35.813,94c3.164,0,4.352-1.992,4.3-1.949C40.768,91.513,42.122,75.329,36,74c-3.822.557-7.725,8.166-4.174,18.332C32.368,92.889,32.885,94,35.813,94Z"/>
+    </g>
+    <g id="tree_copy" data-name="tree copy">
+      <rect id="Rectangle_13_copy" data-name="Rectangle 13 copy" class="cls-10" x="112" y="93" width="2" height="9"/>
+      <path class="cls-11" d="M113.31,96c3.47-.281,4.081-2.016,4.065-1.949,0.868-3.632,1.957-15.66-4.023-17.051-3.882.12-7.56,7.166-4.085,17.332C109.4,94.42,110.266,96.247,113.31,96Z"/>
+    </g>
+  </g>
+</svg>

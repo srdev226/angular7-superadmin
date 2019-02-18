@@ -1,0 +1,62 @@
+<svg id="Icon" xmlns="http://www.w3.org/2000/svg" width="171" height="127" viewBox="0 0 171 127">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eef3fe;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-8 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #e3e3e3;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+      }
+
+      .cls-3 {
+        fill: #11518e;
+      }
+
+      .cls-4 {
+        fill: #569bfc;
+      }
+
+      .cls-5 {
+        fill: #faad27;
+      }
+
+      .cls-6 {
+        fill: #8388e4;
+      }
+
+      .cls-7 {
+        fill: #de617e;
+      }
+
+      .cls-8 {
+        fill: #48cfb7;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M15,71.019c0.518-12.348,3.106-22.638,28.987-30.87S77.739,28.287,90.68,20.569c10.426-6.394,42.473-5.832,57.974,15.435,10.784,14.8,10.007,34.037-2.07,47.334-10.26,11.3-31.5,20.432-52.8,24.7-21.692,4.344-37.893,1.057-53.939-5.117S14.655,85.768,15,71.019Z"/>
+  <g id="_1" data-name="1">
+    <g id="File">
+      <path class="cls-2" d="M44,39v61.882c0,2.372,1.494,4.118,4.591,4.118h74.138c4.25,0,5.272-1.547,5.272-5.138V40c0-4.1-2.506-6-6-6H49C46.25,34,44,35.551,44,39Z"/>
+    </g>
+    <g id="Graph">
+      <g>
+        <path id="Rectangle_12_copy" data-name="Rectangle 12 copy" class="cls-3" d="M56.993,65.517l18.026-12.4,1.661,2.349-18.026,12.4Z"/>
+        <path id="Rectangle_12_copy_3" data-name="Rectangle 12 copy 3" class="cls-3" d="M92.09,59.323l19.636-13.206,1.9,2.163L93.986,61.486Z"/>
+        <path id="Rectangle_12_copy_2" data-name="Rectangle 12 copy 2" class="cls-3" d="M94.164,59.641L74.288,53.3l-1.7,2.292,19.876,6.34Z"/>
+        <circle class="cls-4" cx="58.5" cy="65.5" r="3.5"/>
+        <circle id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-5" cx="76.5" cy="55.5" r="3.5"/>
+        <circle id="Ellipse_1_copy_3" data-name="Ellipse 1 copy 3" class="cls-6" cx="112.5" cy="47.5" r="3.5"/>
+        <circle id="Ellipse_1_copy_2" data-name="Ellipse 1 copy 2" class="cls-7" cx="93.5" cy="59.5" r="3.5"/>
+      </g>
+      <path id="Rounded_Rectangle_606_copy_6" data-name="Rounded Rectangle 606 copy 6" class="cls-8" d="M59,76h1a2,2,0,0,1,2,2V92a2,2,0,0,1-2,2H59a2,2,0,0,1-2-2V78A2,2,0,0,1,59,76ZM77,65h1a2,2,0,0,1,2,2V92a2,2,0,0,1-2,2H77a2,2,0,0,1-2-2V67A2,2,0,0,1,77,65Zm17,5h1a2,2,0,0,1,2,2V92a2,2,0,0,1-2,2H94a2,2,0,0,1-2-2V72A2,2,0,0,1,94,70Zm18-12h1a2,2,0,0,1,2,2V92a2,2,0,0,1-2,2h-1a2,2,0,0,1-2-2V60A2,2,0,0,1,112,58Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+.portlet-body {
+    .profile-container {
+        .profile-sidebar {
+            .middle {
+                .list-unstyled {
+                    li {
+                        height: 16px;
+                        i {
+                            min-width: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hide {
+        display: none;
+    }
+}

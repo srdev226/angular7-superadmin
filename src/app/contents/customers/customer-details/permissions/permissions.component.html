@@ -1,0 +1,40 @@
+<div *ngFor="let module of customerDetails.modules; let i = index" class="applet-container">
+  <div class="applet-head">
+    <h2>{{module.name  + ' Module'}}</h2>
+    <div class="tools">
+      <a href="javascript:void(0);" class="data-collapse" data-toggle="tooltip" data-placement="left" data-original-title="Collapse/Expand"><i class="svg down-icon"></i></a>
+    </div>
+  </div>
+  <div class="applet-body alpha">
+    <table class="table module-table"> 
+      <thead>            
+        <tr>
+          <th>Entity</th>
+          <th>Entity Preferences</th>
+          <th>Dependent Entity</th>
+          <th>Allow Access</th>                                   
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let entity of module.entities; let j = index">                    
+          <td>{{entity.name}}</td>                                   
+          <td>
+            <span class="upper">{{module.name + ' Settings'}}</span>
+            <ul class="list-unstyled child-list">
+              <li *ngFor="let preference of entity.preferences">{{preference.name}}</li>
+            </ul>
+          </td> 
+          <td>
+            <span *ngFor="let dependency of entity.dependencies">{{dependency.name}}<br/></span>
+          </td>
+          <td>
+            <label class="app-checkbox">
+              <input type="checkbox" [checked]="entity.enabled" (click)="toggleAllowAccess(i, j)" [disabled]="!isEditing || checkDependentEntity(i, j)" class="checkboxes" value="1">
+              <span></span>
+            </label>
+          </td>                                
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div> 

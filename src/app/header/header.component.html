@@ -1,0 +1,164 @@
+<!-- begin header -->
+<div class="app-header">   
+  <!-- begin logo -->
+  <div class="app-logo">                      
+    <a [routerLink]="['/']" routerLinkActive="router-link-active" >
+      <img src="../assets/layouts/layout/img/logo/dark/logo.svg" class="logo" alt="" />
+      <img src="../assets/layouts/layout/img/logo/sm/logo.svg" class="logo-sm" alt="" />
+    </a>  
+    <div class="app-bars"><i class="fa-line"></i></div>                  
+  </div>
+  <!-- end logo -->
+  
+  <!-- begin top menu -->
+  <div class="top-menu">
+    <ul class="nav navbar-nav">
+      <li class="dropdown dropdown-add hide" data-toggle="tooltip" data-placement="bottom" data-original-title="Create">
+        <a href="javascript:void(0);" class="icon" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+          <i class="add-icon"></i> 
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">   
+          <ul class="nav">
+            <li><a href="../work/add-estimate.html"><i class="svg estimates-icon"></i> Estimates</a></li>
+            <li><a href="../wo/add-work-order.html"><i class="svg work-icon"></i> Work Order</a></li>
+            <li><a href="../work/add-task.html"><i class="svg task-icon"></i> Task</a></li>
+            <li><a href="../work/add-event.html"><i class="svg event-icon"></i> Event</a></li>
+            <li><a href="../work/add-followup.html"><i class="svg followup-icon"></i> Followup</a></li>
+            <li><a href="../accounts/add-invoice.html"><i class="svg invoice-icon"></i> Invoice</a></li>
+          </ul>                 
+        </div>
+      </li>
+      <li class="dropdown hide" data-toggle="tooltip" data-placement="bottom" data-original-title="Business Settings">
+        <a href="settings/all-settings.html" class="icon">
+          <i class="settings-icon"></i>                             
+        </a>                            
+      </li>
+      <li class="dropdown dropdown-notification hide" data-toggle="tooltip" data-placement="bottom" data-original-title="Notificationsa">
+        <a href="javascript:void(0);" class="icon" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+          <i class="bell-icon"></i> 
+        </a>
+        <div class="dropdown-menu dropdown-menu-right keep-inside-clicks-open hold-on-click">
+          <div class="notification-body">
+            <div class="portlet-head">
+              <h2>Notifications <i class="svg down-icon"></i></h2>
+              <ul class="dropdown-menu">                    
+                <li><a href="javascript:void(0);">Payment (03)</a></li>
+                <li><a href="javascript:void(0);">Work Order (02)</a></li>
+                <li><a href="javascript:void(0);">Tasks (05)</a></li>
+                <li><a href="javascript:void(0);">Events (04)</a></li>
+                <li><a href="javascript:void(0);">Followups (02)</a></li>
+                <li><a href="javascript:void(0);">System Generated (03)</a></li>
+              </ul>                  
+              <div class="tools">  
+                <a href="javascript:void(0);" class="close" data-toggle="tooltip" data-placement="left" data-original-title="Close"><i class="svg close-icon"></i></a>
+              </div>
+            </div>
+            <ul class="list-items notification-list nav">
+              <li class="un">   
+                <a href="">    
+                  <figure><i class="svg user-icon"></i></figure>
+                  <div class="details">
+                    <h4><span>Thomas Geff</span> has requested for Rescheduling Booking <span>#RH32454</span></h4>
+                    <span class="time">just now</span>
+                  </div>
+                </a>
+              </li>
+              <li class="un">
+                <a href="">                                            
+                  <figure><i class="fa fa-dollar"></i></figure>
+                  <div class="details">
+                    <h4>Robert has requested for Rescheduling Booking RH32454</h4>
+                    <span class="time">Just Now</span>
+                  </div>
+                </a>
+              </li> 
+              <li class="un">
+                <a href="">    
+                  <figure><i class="svg calendar-icon"></i></figure>
+                  <div class="details">
+                    <h4>You have received payment of $678 on Booking ER4556</h4>
+                    <span class="time">just now</span>
+                  </div>
+                </a>
+              </li>   
+              <li class="un">   
+                <a href="">    
+                  <figure><i class="svg calendar-icon-times-o"></i></figure>
+                  <div class="details">
+                    <h4>Emily has cancelled Booking EK45667</h4>
+                    <span class="time">just now</span>
+                  </div>
+                </a>
+              </li> 
+              <li>   
+                <a href="">    
+                  <figure><i class="svg user-icon"></i></figure>
+                  <div class="details">
+                    <h4>Aleen Mcgriff has cancelled Booking EK45667</h4>
+                    <span class="time">3 mins</span>
+                  </div>
+                </a>
+              </li> 
+              <li>   
+                <a href="">    
+                  <figure><i class="svg user-icon"></i></figure>
+                  <div class="details">
+                    <h4>Drake Williams failed to complete the Booking JF4355</h4>
+                    <span class="time">3 mins</span>
+                  </div>
+                </a>
+              </li>  
+              <li>   
+                <a href="">    
+                  <figure><i class="svg user-icon"></i></figure>
+                  <div class="details">
+                    <h4>Rober Willkinson has applied for leave on 23 Mar 2017</h4>
+                    <span class="time">just now</span>
+                  </div>
+                </a>
+              </li> 
+              <li>   
+                <a href="">    
+                  <figure><i class="svg user-icon"></i></figure>
+                  <div class="details">
+                    <h4>Aleen Mcgriff has applied for leave on 26 Mar 2017</h4>
+                    <span class="time">3 mins</span>
+                  </div>
+                </a>
+              </li>                                                                                        
+            </ul> 
+          </div>
+        </div>
+      </li>     
+      <li class="dropdown dropdown-user">
+        <a href="javascript:void(0);" class="icon" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"  (click)="toggleAccount()">
+          <figure>
+            <img src="../assets/layouts/layout/img/user.png" alt="" />
+          </figure>
+        </a>
+        <div #elRef class="dropdown-menu dropdown-menu-right account" [ngClass]="{'open': accountOpened}">
+          <ul class="nav">    
+            <li>
+              <figure>
+                <img src="../assets/layouts/layout/img/user.png">
+              </figure>
+              <div class="user-col">
+                <h3>Carlo BeranekCarlo BeranekCarlo Beranek</h3>
+                <span>info@email.com</span>
+                <button class="hide" class="btn primary" disabled>My Account</button>
+              </div>
+            </li>       
+            <li class="hide">
+              <a href="settings/help.html"><i class="svg help-icon"></i> Help</a>
+            </li>
+            <li>
+              <a (click)="onLogout()" class="pointer"><i class="svg logout-icon"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </li>                     
+    </ul>
+  </div>
+  <!-- end top menu -->      
+</div>
+<!-- end header -->      

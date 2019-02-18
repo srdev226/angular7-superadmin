@@ -1,0 +1,116 @@
+.activity-container{
+  padding: 20px;
+  background: $primary-bkg;
+  .activity-head {
+    @include flexbox;
+    @include align-items(center);
+    padding: 0 12px;
+    margin-bottom: 16px;
+    h2{
+      opacity: 0.5;
+      font-size: 14px;
+      @include flex(1);
+    }
+    small{
+      opacity: 0.5;
+      font-size: $font-size-regular;
+    }
+    a.dropdown-toggle{
+      color: $base-font-color-2;
+      font-weight: 600;
+    }
+    li.all{
+      background: $primary-bkg;
+      .control-label{
+        margin: 3px 0;
+        font-weight: 600;
+      }
+    }
+    .control-label{
+      margin: 0;
+    }
+  }
+  .activity-list {
+    @include list-unstyled;
+    margin-bottom: 16px;
+    box-shadow: $base-box-shadow-3;
+    li{
+      margin: 0;
+      padding: 0;
+      background: $regular-bkg;
+      box-shadow: $base-box-shadow-2;
+      @include transition(all 0.45s ease-in-out);      
+      .top{
+        color: $base-font-color-4;
+        padding: 4px;
+        overflow: hidden;
+        position: relative;
+        .icon{
+          left: 22px;
+          top: 21px;
+          font-size: 18px;
+          position: absolute;
+        }
+        .cnt{          
+          padding: 20px 75px 14px 65px;
+           h4{
+            margin: 0;
+            font-size: $font-size-small;
+            line-height: 16px;
+            margin-bottom: 8px;
+            overflow: hidden;
+            font-weight: normal;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+          .dec{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+        .right {
+          top: 20px;
+          right: 20px;
+          opacity: 0.4;
+          font-weight: 600;
+          position: absolute;
+          .timer{
+            padding-right: 20px;
+          }
+          .arrow{
+            cursor: pointer;  
+          }
+        }
+      }
+      .bottom{
+        height: 0;
+        line-height: 0;
+        padding: 0 10px;
+        overflow: hidden;
+        background: $primary-bkg;
+        @include transition(all 0.45s ease-in-out);
+        a{
+          margin-right: 12px; 
+          display: inline-block;
+          &.delete{
+            color: #ed6b75;
+          }
+          &.cancel{
+            color: #787878;
+          }
+        }
+      }
+      &.open{
+        margin: 12px 0;
+        .arrow i{
+          transform: rotate(180deg);
+        }
+        .bottom{
+          height: 38px;
+          line-height: 38px;
+        }
+      }
+    }
+  }
+}

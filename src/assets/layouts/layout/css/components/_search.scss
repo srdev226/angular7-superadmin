@@ -1,0 +1,50 @@
+.search-engine {
+  width: 50px;
+  position: relative;  
+  .input-group-btn{
+    margin-left: auto;
+    .btn{
+      z-index: 3;
+      height: 38px;
+      color: $base-font-color-dark;
+      opacity: 0.65;
+      font-size: 18px;
+      padding: 8px 12px;
+      line-height: normal;
+      position: relative;
+      &:hover{
+        opacity: 1;
+        color: #4b8cfc;
+      }
+    }    
+  }
+  .form-control {
+    width: 0;
+    height: 40px;
+    border: 0;
+    padding: 0;
+    top: 0;
+    right: 12px;    
+    position: absolute;
+    outline: 0;
+    border-radius: 0;
+    background: transparent;
+    @include transition(all 0.4s ease-in-out);
+    border-left: 0 !important;    
+    border-bottom: 1px solid transparent;
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+  &.right{
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+  &.open{
+    width: 250px;
+    .form-control{
+      width: 100%;
+      padding-right: 40px;  
+      box-shadow: none !important;
+    }
+  }
+}

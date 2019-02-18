@@ -1,0 +1,53 @@
+.portlet-404{
+  color: #111;  
+  font-size: 15px;
+  margin-top: 52px;
+  text-align: center;
+  height: calc(100vh - 52px);
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center); 
+  h1{
+    font-size: 150px;
+    line-height: 1;
+    margin-bottom: 26px;
+  }
+  figure{
+    margin-bottom: 46px;
+  }
+  h2{
+    font-size: 20px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+  span{
+    opacity: 0.5;
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+
+  p{
+    opacity: 0.96;
+    margin-bottom: 28px;
+  }
+
+  .btn{
+    font-size: 15px;
+    min-width: 110px;
+    padding: 8px 20px;
+  }
+}
+
+.app-indicator{
+  .app-header{
+    background: transparent !important;
+    .app-logo{
+      background: transparent;
+    }
+  }
+  .app-footer{
+    opacity: 1;
+    color: #000;
+  }
+}
+

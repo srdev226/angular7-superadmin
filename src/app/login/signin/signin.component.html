@@ -1,0 +1,48 @@
+<!-- <form [formGroup]="loginForm" class="form-data" (keydown.enter)="$event.preventDefault()"> -->
+<form [formGroup]="loginForm" class="form-data">
+  <div class="ins">
+    <div class="head">
+      <h2>Sign in to access FieldTitan</h2>
+      <p>Enter your email and password to signin</p>
+    </div>
+    <!-- <div class="alert alert-danger" 
+      *ngIf="(loginForm.get('userName').dirty && loginForm.get('userName').hasError('required')) ||
+              (loginForm.get('password').dirty && loginForm.get('password').hasError('required'))">
+      <button class="close" data-close="alert"></button>
+      <span>Enter your email and password to signin.</span>
+    </div> -->
+    <div class="alert alert-danger" 
+      *ngIf="isFormValid === false">
+      <button class="close" data-close="alert"></button>
+      <span>{{errorMessage || 'Enter correct email and password.'}}</span>
+    </div>
+    <div class="form-group"> 
+      <input class="form-control" type="text" autocomplete="off" placeholder="Enter your Email ID, or Username, or Employee ID" name="username" formControlName="userName"/> 
+    </div>
+    <div class="form-group">
+      <div class="input-group password-gutter">
+        <input class="form-control password" [type]="passwordType" placeholder="Password" formControlName="password"/> 
+        <span class="input-group-btn">
+          <button class="btn show-password" type="button" (click)="toggleEyeButton()" [ngStyle]="{'opacity': passwordType == 'text' ? 1 : 0.6}">
+            <i class="svg eye-icon"></i>
+          </button>
+        </span>
+      </div>
+    </div>
+    <div class="form-actions">
+      <button 
+        type="submit" 
+        class="btn orange" 
+        (click)="onSubmit()" 
+        [disabled]="loginForm.get('userName').hasError('required') || loginForm.get('password').hasError('required')"
+      >
+        Signin
+      </button>             
+      <!-- <a [routerLink]="['/login/forgot-password']" routerLinkActive="router-link-active"  id="forget-password" class="btn-link">Forgot Password?</a> -->
+      <p class="info">Do not have an account? <a class="pointer" (click)="onSignUp()">Signup</a></p>           
+    </div>
+  </div>
+</form>
+<div class="copyright">
+  <p>Copyright © FieldTitan. All rights Reserved.</p>
+</div>

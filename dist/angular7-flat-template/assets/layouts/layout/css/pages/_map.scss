@@ -1,0 +1,73 @@
+.map-container{
+  margin: 100px;
+  position: relative;
+  .pin-icon{
+    font-size: 80px;
+    line-height: 1;
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    span{
+      position: absolute;
+      width: 38px;
+      height: 38px;
+      top: 11px;
+      font-size: 13px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px !important;
+      overflow: hidden;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    &.pin-1{
+      left: 0;
+      top: 20px;
+    }
+    &.pin-2{
+      left: 20%;
+      top: 80px;
+    }
+    &.pin-3{
+      left: 40%;
+      top: 120px;
+    }
+    &.pin-4{
+      left: 80%;
+      top: 20px;
+    }
+  }
+}
+
+.popover.right{
+  width: 260px;
+  *{
+    padding: 0px;
+  }
+  h5{
+    font-size: 16px;
+    font-weight: 500;
+    background: #eee;
+    padding: 4px 10px;
+    margin-bottom: 6px;
+  }
+  h6{
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+  .data{
+    font-size: 13px;
+    padding: 0 10px 4px 20px;
+    &:last-child{
+      padding-bottom: 12px;
+    }
+    i{
+      opacity: 0.5;
+      text-align: left;
+      min-width: 20px; 
+    }
+  }
+}

@@ -1,0 +1,184 @@
+.note-sec{
+  max-width: 1000px;
+  .note-list{
+    li{
+      padding: 4px;
+      padding-right: 0;
+      overflow: hidden; 
+      background: $regular-bkg;
+      position: relative;
+      border-left: 4px solid transparent;
+      @include transition(all 0.3s ease-in-out);
+      box-shadow: $base-box-shadow-4;
+      :hover{
+        border-left-color: #fa7c46;
+      }
+      &:before{
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        z-index: 1;
+        content: "";
+        opacity: 0.3;
+        background: #ccc;
+        position: absolute;
+      }
+      &.active{
+        margin: 12px 0;
+        box-shadow: $base-box-shadow-5;
+        &:before{
+          opacity: 0;
+        }
+      }
+      figure{
+        float: left;
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        z-index: 4;
+        position: relative;
+        margin-right: 12px;
+        img{
+          width: 100%;
+        }
+      }
+      .cnt{
+        color: $base-font-color-1;
+        cursor: pointer;
+        padding: 2px 0;
+        position: relative;
+        &:before{
+          width: 100%;
+          left: 0;
+          top: -10px;
+          bottom: -10px;
+          z-index: 1;
+          opacity: 0;
+          content: "";
+          position: absolute;
+          background: $primary-bkg;
+          @include transition(all 0.3s ease-in-out);
+        }
+        &:hover:before{
+          width: 100%;
+          opacity: 1;
+        }
+        p{
+          z-index: 4;
+          margin-bottom: 0; 
+          position: relative;
+          &.title{
+            color: $base-font-color-4;
+            font-size: $font-size-small;
+            font-weight: 600;
+            margin-bottom: 6px;
+          }
+          span{
+            color: #787878;
+            font-weight: 500;
+          }
+        }
+      }      
+    }
+  }
+}
+
+.note-lists{
+  box-shadow: 0px 0 1.5px 0 rgba(0,0,0,.12);
+  li{
+    padding: 12px;
+    margin-bottom: 0;
+    background: $regular-bkg;
+    position: relative;
+    box-shadow: $base-box-shadow-2;
+    figure {
+      float: left;
+      width: 50px;
+      z-index: 4;
+      position: relative;
+      margin-right: 12px;
+    }
+    .cnt {
+      color: $base-font-color-1;
+      cursor: pointer;
+      padding: 2px 0;
+      position: relative;
+      @media (min-width: 992px){
+        padding-right: 250px;
+      }
+      p{
+        z-index: 4;
+        font-size: 12px;
+        margin-bottom: 0;
+        position: relative;
+        &.title {
+          color: $base-font-color-4;
+          font-size: $font-size-small;
+          margin-bottom: 6px;
+        }
+      }
+    }
+    .right {
+      top: 12px;
+      right: 20px;
+      font-weight: 600;
+      position: absolute;
+      a{
+       font-size: $font-size-large;
+       color: $base-font-color-1;
+      }
+      .timer{
+        opacity: 0.4;
+        padding-right: 20px;
+      }      
+    }
+  }
+}
+
+.notes-gutter{
+  .ins{
+    padding: 22px;
+    overflow: hidden;
+    background: #fff; 
+    margin-bottom: 6px;
+  }
+  .list-unstyled{
+    li{
+      font-size: 14px;
+      @include flexbox;
+      margin-bottom: 24px;
+      .data{
+        @include flexbox;
+        @include align-items(center);
+        max-width: calc(100% - 300px);
+        figure{
+          width: 46px;
+          height: 46px;
+          min-width: 46px;
+          overflow: hidden;
+          border-radius: 100px;
+          @include flexbox;
+          @include align-items(center);
+          @include justify-content(center);
+        }
+        .cnt{  
+          margin-left: 18px;        
+          h3{
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+          }
+          p{
+            margin-bottom: 0;
+          }
+        }
+      }
+      .date{
+        opacity: 0.6;
+        margin-left: auto;
+      }
+    }
+  } 
+}
+
